@@ -3,6 +3,9 @@ title = 'Seven Review'
 date = 2025-02-12T22:39:57+05:45
 draft = true
 +++
+Seven - Movie-Review
+
+
 David Fincher's Se7en meticulously builds up tension, culminating in an ending that is as shocking as it is inevitable. John Doe, played chillingly by Kevin Spacey, orchestrates his own demise with precision. His embodiment of the seven deadly sins culminates in Wrath, the final and most devastating sin, forcing Detective Mills (Brad Pitt) into becoming a pawn in his twisted vision of justice. The film’s nihilistic conclusion leaves the audience disturbed yet in awe of its thematic execution.
 
 John Doe: A Calculated Mastermind
