@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://codinglcinician.netlify.app/'
 languageCode = 'en-us'
 title = 'Coding clinician'
 theme = "PaperMod"
