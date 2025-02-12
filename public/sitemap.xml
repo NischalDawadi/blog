@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://codinglcinician.netlify.app/</loc>
+    <loc>http://localhost:44917/</loc>
+    <lastmod>2025-02-12T22:39:57+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:44917/posts/</loc>
+    <lastmod>2025-02-12T22:39:57+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:44917/posts/seven-review/</loc>
+    <lastmod>2025-02-12T22:39:57+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:44917/posts/first-post/</loc>
     <lastmod>2025-02-12T21:24:05+05:45</lastmod>
   </url><url>
-    <loc>https://codinglcinician.netlify.app/posts/</loc>
-    <lastmod>2025-02-12T21:24:05+05:45</lastmod>
+    <loc>http://localhost:44917/categories/</loc>
   </url><url>
-    <loc>https://codinglcinician.netlify.app/categories/</loc>
-  </url><url>
-    <loc>https://codinglcinician.netlify.app/tags/</loc>
+    <loc>http://localhost:44917/tags/</loc>
   </url>
 </urlset>

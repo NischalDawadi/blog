@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Coding clinician</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:44917/</link>
     <description>Recent content on Coding clinician</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2025 22:22:43 +0545</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Feb 2025 22:39:57 +0545</lastBuildDate>
+    <atom:link href="http://localhost:44917/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Seven Review</title>
-      <link>http://localhost:1313/posts/seven-review/</link>
-      <pubDate>Wed, 12 Feb 2025 22:22:43 +0545</pubDate>
-      <guid>http://localhost:1313/posts/seven-review/</guid>
+      <link>http://localhost:44917/posts/seven-review/</link>
+      <pubDate>Wed, 12 Feb 2025 22:39:57 +0545</pubDate>
+      <guid>http://localhost:44917/posts/seven-review/</guid>
       <description></description>
     </item>
     <item>
       <title>Book review</title>
-      <link>http://localhost:1313/posts/first-post/</link>
+      <link>http://localhost:44917/posts/first-post/</link>
       <pubDate>Wed, 12 Feb 2025 21:24:05 +0545</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
+      <guid>http://localhost:44917/posts/first-post/</guid>
       <description>&lt;p&gt;The Alchemist – Book Review&lt;/p&gt;
 &lt;p&gt;📖 By Paulo Coelho&lt;/p&gt;
 &lt;p&gt;🌟 Rating: 4.5/5
