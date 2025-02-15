@@ -23,12 +23,15 @@ Spiritual Wisdom – A blend of mysticism, philosophy, and personal reflection.
 👍 What I Loved
 
 ✅ Simple yet profound storytelling.
+  
 ✅ Inspiring and motivational.
+
 ✅ Rich symbolism that makes you reflect on life.
 
 🤔 What Could Be Better
 
-❌ Some readers may find it overly philosophical.
+❌ Some readers may find it overly philosophical.         
+
 ❌ Predictable story arc.
 
 📌 Final Thoughts
