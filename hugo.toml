@@ -20,8 +20,8 @@ theme = 'PaperMod'
 
 
 [[params.socialIcons]]
-  name = "email"
-  url = "https://gmail.com/jamesdawadi13@gmail.com"
+    name = "email"
+    url = "https://gmail.com/jamesdawadi13@gmail.com"
 
   [[params.socialIcons]]
   name = "youtube"
