@@ -2,6 +2,12 @@
 title = 'Seven Review'
 date = 2025-02-12T22:39:57+05:45
 draft = true
+[cover]
+  image = "/images/seven.jpg"
+  alt = "Absolute Elsewhere"
+  imageWidth = 20
+  imageHeight = 20
+  relative = true
 +++
 
 

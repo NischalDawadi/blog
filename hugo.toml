@@ -3,18 +3,27 @@ languageCode = 'en-us'
 title = 'Nischal Home'
 theme = 'PaperMod'
 
+
 [params]
-  ShowReadingTime = true
   ShowShareButtons = true
   ShowToc = false
+  showPostNavLinks = true
+  showReadingTime = true
+  showToc = true
+  showPostThumbnails = true
+  showBreadCrumbs = true
   defaultTheme = "auto"
-  mainSections = ["books", "movies"]
-
-  homeInfoParams = { Title = "Welcome to Digital Home", Content = "Exploring books and movies." }
- [cover]
-  image = "/images/home-cover.jpg"  # Change this to your image path
-
-[[params.socialIcons]]
+  mainSections = ["books", "movies","music"]
+  
+  [params.homeInfoParams]
+ Title = "Welcome to Digital Home"
+ Content = "Exploring books, movies and music."
+   imageUrl= "images/home-cover.jpg" # optional
+    imageTitle= "title of image as alt" # optional
+    imageWidth= 200 # custom size
+    imageHeight= 200 # custom size
+  
+ [[params.socialIcons]]
   name = "github"
   url = "https://github.com/NischalDawadi"
 
@@ -39,3 +48,10 @@ theme = 'PaperMod'
     name = "Movies"
     url = "/movies/"
     weight = 2
+
+ [[menu.main]]
+  identifier= "music"
+ name = "Music"
+ url = "/music/"
+ description = "Journey through Music"
+weight = 3
