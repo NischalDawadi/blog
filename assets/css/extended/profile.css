@@ -1,0 +1,7 @@
+.profile-image {
+  width: 120px;       /* or your desired size */
+  height: 120px;      /* equal height to width for circle */
+  object-fit: cover;  /* preserve aspect ratio & crop */
+  border-radius: 50%; /* makes it round */
+  display: block;     /* removes inline space */
+}

@@ -5,23 +5,25 @@ theme = 'PaperMod'
 
 
 [params]
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowToc = false
   showPostNavLinks = true
-  showReadingTime = true
+  showReadingTime = false
   showToc = true
   showPostThumbnails = true
   showBreadCrumbs = true
-  defaultTheme = "auto"
+  defaultTheme = "light"
   mainSections = ["books", "movies","music"]
-  
-  [params.homeInfoParams]
- Title = "Welcome to Digital Home"
- Content = "Exploring books, movies and music."
-   imageUrl= "images/home-cover.jpg" # optional
+   hideFooter = true
+    
+  [params.profileMode]
+  enabled= true
+ Title = "Hello this is Nischal."
+ subtitle = "Exploring books, movies and music."
+   imageUrl= "images/profile.jpg" # optional
     imageTitle= "title of image as alt" # optional
-    imageWidth= 200 # custom size
-    imageHeight= 200 # custom size
+
+   
   
  [[params.socialIcons]]
   name = "github"

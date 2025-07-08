@@ -1,0 +1,115 @@
+/* ===== Google Fonts (Add in head.html) ===== */
+/* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet"> */
+
+/* ===== Typography ===== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F7FA; /* Cloud Mist */
+    color: #1A1B1F; /* Charcoal Black */
+    line-height: 1.6;
+}
+
+.home-info h1 {
+    background: transparent;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6, .site-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav a, .menu a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+.home-info mark {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+
+
+
+/* ===== Link & Button Styling ===== */
+
+a,
+.post-content a {
+    color: #5A67D8; /* Misty Indigo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+.post-content a:hover {
+    color: #434190; /* Deep Indigo */
+}
+
+/* ===== Accent Elements ===== */
+
+.nav, .menu {
+    background-color: #F5F7FA;
+}
+
+.post-entry, .card, .home-info {
+    background-color: #E2E8F0; /* Soft Pebble */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Tags or Highlights */
+.tag, .taxonomy-term {
+    background-color: #FCD9D9; /* Blush Sand */
+    color: #1A1B1F;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+/* ===== Dark Mode Overrides ===== */
+
+body.dark {
+    background-color: #0E141B; /* Midnight Slate */
+    color: #F1F5F9; /* Cloud White */
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark h4, 
+body.dark h5, 
+body.dark h6, 
+body.dark .site-title {
+    color: #F1F5F9;
+}
+
+body.dark a,
+body.dark .post-content a {
+    color: #A3BFFA; /* Soft Lilac */
+}
+
+body.dark a:hover,
+body.dark .post-content a:hover {
+    color: #5A67D8; /* Misty Indigo */
+}
+
+body.dark .post-entry, 
+body.dark .card, 
+body.dark .home-info {
+    background-color: #1C2530;
+}
+
+body.dark .tag, 
+body.dark .taxonomy-term {
+    background-color: #434190; /* Deep Indigo */
+    color: #F1F5F9;
+}
