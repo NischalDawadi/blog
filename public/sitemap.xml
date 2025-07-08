@@ -26,6 +26,8 @@
     <loc>http://localhost:1313/books/</loc>
     <lastmod>2025-02-12T21:24:05+05:45</lastmod>
   </url><url>
+    <loc>http://localhost:1313/books/ri/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
