@@ -15,11 +15,11 @@ theme = 'PaperMod'
   defaultTheme = "light"
   mainSections = ["books", "movies","music"]
    hideFooter = true
-    
+
   [params.profileMode]
   enabled= true
  Title = "Hello this is Nischal."
- subtitle = "Exploring books, movies and music."
+ subtitle = "Exploring book, movies and music."
    imageUrl= "images/profile.jpg" # optional
     imageTitle= "title of image as alt" # optional
 
