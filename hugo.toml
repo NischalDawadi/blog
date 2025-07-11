@@ -22,8 +22,8 @@ theme = ["hugo-admonitions", "PaperMod"]
  subtitle = "Exploring book, movies and music."
    imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "title of image as alt" # optional
-   imageWidth = "20%"
-   imageHeight = "90%"
+   imageWidth = "150px"
+   imageHeight = "auto"
    
   
  [[params.socialIcons]]
