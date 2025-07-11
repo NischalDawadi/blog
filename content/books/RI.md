@@ -9,9 +9,8 @@ author= "Nischal Dawadi"
   image = "/images/RI.jpg"
 +++
 
-*Reverend Insanity* by Gu Zhen Ren is not your typical cultivation webnovel. It is a dark, complex, and unapologetically philosophical story about a man who refuses to die — not just in body, but in will. Through the eyes of Fang Yuan, the novel explores the price of ambition, the nature of power, and the question: *what does it truly mean to live freely?*
+*Reverend Insanity* by Gu Zhen Ren is not your typical cultivation webnovel. It is a dark, complex and unapologetically philosophical story about a man who refuses to die — not just in body, but in will. Through the eyes of Fang Yuan, the novel explores the price of ambition, the nature of power, and the question: *what does it truly mean to live freely?*
 
----
 
 ## The Gu World: Power Engineered Through Strategy, Not Justice
 

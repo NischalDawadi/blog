@@ -23,11 +23,7 @@ h1, h2, h3, h4, h5, h6, .site-title {
 }
 
 
-.home-info mark {
-    background: transparent;
-    color: inherit;
-    padding: 0;
-}
+
 
 
 
@@ -54,7 +50,7 @@ a:hover,
 
 .post-entry, .card, .home-info {
     background-color: #E2E8F0; /* Soft Pebble */
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
@@ -93,6 +89,7 @@ body.dark a:hover,
 body.dark .post-content a:hover {
     color: #5A67D8; /* Misty Indigo */
 }
+
 
 body.dark .post-entry, 
 body.dark .card, 
