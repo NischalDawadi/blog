@@ -1,17 +1,17 @@
 baseURL = 'https://codingclinician.netlify.app/'
 languageCode = 'en-us'
 title = 'Nischal Home'
-theme = 'PaperMod'
+theme = ["hugo-admonitions", "PaperMod"]
 
 
 [params]
-  ShowShareButtons = false
-  ShowToc = false
+  showShareButtons = false
   showPostNavLinks = true
   showReadingTime = false
   showToc = true
-  showPostThumbnails = true
-  showBreadCrumbs = true
+  ShowRssButtonInSectionTermList= true
+  showPostThumbnails = false
+  showBreadCrumbs = false
   defaultTheme = "light"
   mainSections = ["books", "movies","music"]
    hideFooter = true
@@ -20,9 +20,10 @@ theme = 'PaperMod'
   enabled= true
  Title = "Hello this is Nischal."
  subtitle = "Exploring book, movies and music."
-   imageUrl= "images/profile.jpg" # optional
+   imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "title of image as alt" # optional
-
+   imageWidth = "20%"
+   imageHeight = "90%"
    
   
  [[params.socialIcons]]
@@ -57,3 +58,4 @@ theme = 'PaperMod'
  url = "/music/"
  description = "Journey through Music"
 weight = 3
+

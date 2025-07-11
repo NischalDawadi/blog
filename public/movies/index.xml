@@ -4,7 +4,7 @@
     <title>Movies on Nischal Home</title>
     <link>http://localhost:1313/movies/</link>
     <description>Recent content in Movies on Nischal Home</description>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Feb 2025 22:39:57 +0545</lastBuildDate>
     <atom:link href="http://localhost:1313/movies/index.xml" rel="self" type="application/rss+xml" />

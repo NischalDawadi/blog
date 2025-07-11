@@ -1,5 +1,5 @@
 +++
-title = 'Reverend Insanity: A Ruthless Meditation on Immortality, Power, and Defiance'
+title = 'Reverend Insanity'
 description= "A thoughtful review of Gu Zhen Ren's webnovel 'Reverend Insanity', exploring the Gu world's philosophy, Fang Yuan’s ambition, and the fight against Heaven's Will."
 date= 2025-07-08
 tags= ["Reverend Insanity", "webnovel review", "Fang Yuan", "immortality", "Chinese fantasy"]
@@ -18,7 +18,7 @@ author= "Nischal Dawadi"
 In the Gu world, everything is a transaction — nothing is free, and no one is safe. Magical creatures called **Gu** grant power, but only to those clever or ruthless enough to use them. Unlike other fantasy systems, cultivation here is not about destiny or righteousness. It is about planning, deception, and overwhelming force.
 
 The world rewards not the kind-hearted, but the calculating. As one quote from the novel sums it:
-
+>[!QUOTE]
 > *“In this world there are only eternal benefits, there are no eternal friends or enemies.”*
 
 This sets the tone for everything that follows. It is a system that strips away idealism and lays bare the laws of survival.
@@ -31,6 +31,7 @@ Fang Yuan’s goal is not revenge, not justice, not even wealth. It is **eternal
 
 But Fang Yuan’s ruthlessness is not emotional. It is cold and logical. Every action he takes, no matter how cruel, serves a long-term vision: freedom from death, freedom from fate. As he states:
 
+>[!QUOTE]
 > *“There is only immortality. Only eternal life should be the goal one should pursue.”*
 
 What makes him fascinating is not his power, but his discipline. He is not a madman. He is clarity, stripped of comfort.

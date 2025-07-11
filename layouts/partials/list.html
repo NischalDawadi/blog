@@ -1,0 +1,5 @@
+{{ with .Params.description }}
+  <p>{{ . }}</p>
+{{ else }}
+  <p>{{ .Summary }}</p>
+{{ end }}

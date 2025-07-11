@@ -16,8 +16,11 @@ When the vocals bless us you're sinking deeper into the vastness , staring upwar
 
 Lyrically, Echoes cements Pink Floyd as frontrunner of prog-rock. The second verse especially stands out as one of Pink Floyd's most poetic moments, describing human as one whole existence, despite distance we are not separate as we think. It captures  fleeting but powerful sense of unity, a theme that runs deeply in Echoes. 
 
-![Lyrics](/images/Echoes.jpg)
-
+>[!QUOTE] Lyrics
+>**Strangers passing in the street** \
+   **By chance, two separate glances meet** \
+   **And I am you and what I see is me.**
+   
 The slow buildup leads to an eerie, wailing cry, like a whale’s mournful call reverberating through the deep. This moment of deep chaos truly defines the section. But it eventually resolves, and the song finds its way back to its original form, rising gently like a tide returning to shore. As the familiar melodies resurface, the epic lifts the listener from the depths and back into reality.
 
 Echoes isn’t just a song - it’s a passage,a sonic representation of the abyss, proving why Pink Floyd remains one of progressive rock’s most transcendent forces.
