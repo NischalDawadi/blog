@@ -1,21 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Music on Nischal Home</title>
-    <link>http://localhost:1313/music/</link>
-    <description>Recent content in Music on Nischal Home</description>
-    <generator>Hugo -- 0.148.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 19 Feb 2025 22:20:58 +0545</lastBuildDate>
-    <atom:link href="http://localhost:1313/music/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Echoes: An Underrated Masterpiece</title>
-      <link>http://localhost:1313/music/echoes/</link>
-      <pubDate>Wed, 19 Feb 2025 22:20:58 +0545</pubDate>
-      <guid>http://localhost:1313/music/echoes/</guid>
-      <description>&lt;p&gt;Often overshadowed by the prog epic Shine on You Crazy Diamond, Echoes stands as one of Pink Floyd’s most breathtaking achievements, a 24 minutes journey into deep underwater dreamlike soundscapes.
-Through the opening ping you get carried through an oceanic abyss, where time and space seems to dissolve.&lt;/p&gt;
-&lt;p&gt;From the first &amp;ldquo;ping&amp;rdquo;, you&amp;rsquo;re drawn into a mysterious pelagic depth.The distant ripples of sound give the impression of waves striking against an unseen shore. As Gilmour&amp;rsquo;s soaring guitar riff enters, you get sucked into trance-like state.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Music on Nischal Home</title><link>https://codingclinician.netlify.app/music/</link><description>Recent content in Music on Nischal Home</description><generator>Hugo -- 0.148.0</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2025 22:20:58 +0545</lastBuildDate><atom:link href="https://codingclinician.netlify.app/music/index.xml" rel="self" type="application/rss+xml"/><item><title>Echoes: An Underrated Masterpiece</title><link>https://codingclinician.netlify.app/music/echoes/</link><pubDate>Wed, 19 Feb 2025 22:20:58 +0545</pubDate><guid>https://codingclinician.netlify.app/music/echoes/</guid><description>&lt;p>Often overshadowed by the prog epic Shine on You Crazy Diamond, Echoes stands as one of Pink Floyd’s most breathtaking achievements, a 24 minutes journey into deep underwater dreamlike soundscapes.
+Through the opening ping you get carried through an oceanic abyss, where time and space seems to dissolve.&lt;/p>
+&lt;p>From the first &amp;ldquo;ping&amp;rdquo;, you&amp;rsquo;re drawn into a mysterious pelagic depth.The distant ripples of sound give the impression of waves striking against an unseen shore. As Gilmour&amp;rsquo;s soaring guitar riff enters, you get sucked into trance-like state.&lt;/p></description></item></channel></rss>
