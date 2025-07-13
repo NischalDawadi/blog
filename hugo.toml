@@ -15,6 +15,12 @@ theme = ["hugo-admonitions", "PaperMod"]
   defaultTheme = "light"
   mainSections = ["books", "movies","music"]
    hideFooter = true
+   
+[params.label]
+text = "Nischal Home"
+icon = "images/profile.jpg"
+iconHeight = "60"
+
 
   [params.profileMode]
   enabled= true
