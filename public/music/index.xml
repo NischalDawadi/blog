@@ -6,8 +6,15 @@
     <description>Recent content in Music on Nischal Home</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Feb 2025 22:20:58 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 21:30:00 +0545</lastBuildDate>
     <atom:link href="http://localhost:1313/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crimson – Edge of Sanity</title>
+      <link>http://localhost:1313/music/crimson/</link>
+      <pubDate>Sun, 13 Jul 2025 21:30:00 +0545</pubDate>
+      <guid>http://localhost:1313/music/crimson/</guid>
+      <description>An ambitious death metal epic that bends genre and time alike</description>
+    </item>
     <item>
       <title>Echoes: An Underrated Masterpiece</title>
       <link>http://localhost:1313/music/echoes/</link>
