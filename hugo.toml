@@ -22,6 +22,12 @@ icon = "images/profile.jpg"
 iconHeight = "60"
 
 
+[params.assets]
+favicon = "/icons/favicon.ico"
+favicon16x16 = "/icons/favicon-16x16.png"
+favicon32x32 = "/icons/favicon-32x32.png"
+apple_touch_icon = "/icons/apple-touch-icon.png"
+
   [params.profileMode]
   enabled= false
  Title = "Hello this is Nischal."
