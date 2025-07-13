@@ -1,6 +1,6 @@
 {{- with site.Params.homeInfoParams }}
-<article class="first-entry home-info">
-    <div class="profile_inner">
+<article class="first-entry home-info text-center">
+    <div class="profile_inner mb-4">
         {{- if .imageUrl -}}
             {{- $img := "" }}
             {{- if not (urls.Parse .imageUrl).IsAbs }}
@@ -20,30 +20,46 @@
                     {{ else if .imageWidth }}
                         {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
                     {{ else }}
-                        {{- $img = $img.Resize "150x150" }}
+                        {{- $img = $img.Resize "200x200" }}
                     {{- end }}
                 {{- end }}
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile image" }}"
-                title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-                width="{{ .imageWidth | default 150 }}" />
+            <img
+                draggable="false"
+                src="{{ $img.Permalink }}"
+                alt="{{ .imageTitle | default "Profile image" }}"
+                title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 200 }}"
+                width="{{ .imageWidth | default 200 }}"
+                style="border-radius: 9999px; max-width: 200px; height: auto; margin: auto;"
+            />
             {{- else }}
-            <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
-                title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-                width="{{ .imageWidth | default 150 }}" />
+            <img
+                draggable="false"
+                src="{{ .imageUrl | absURL }}"
+                alt="{{ .imageTitle | default "Profile image" }}"
+                title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 200 }}"
+                width="{{ .imageWidth | default 200 }}"
+                style="border-radius: 9999px; max-width: 200px; height: auto; margin: auto;"
+            />
             {{- end }}
         {{- end }}
-    </div>
-    <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
-    </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
-    </div>
-    <footer class="entry-footer">
+            </div>
+  
+        <header class="entry-header" style="text-align: center;">
+    <h1 class="text-3xl font-bold">{{ .Title | markdownify }}</h1>
+     </header>
+
+<div class="entry-content" style="text-align: center;">
+    {{ .Content | markdownify }}
+</div>
+
+    <footer class="entry-footer mt-4" style="text-align: center;">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
+
     {{- with .buttons }}
-    <div class="buttons">
+    <div class="buttons mt-4" style="text-align: center;">
         {{- range . }}
         <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
             <span class="button-inner">
@@ -62,4 +78,4 @@
     </div>
     {{- end }}
 </article>
-{{- end -}}
+{{- end }}

@@ -23,7 +23,7 @@ iconHeight = "60"
 
 
   [params.profileMode]
-  enabled= true
+  enabled= false
  Title = "Hello this is Nischal."
  subtitle = "Exploring book, movies and music."
    imageUrl= "images/Nischal.jpeg" # optional
@@ -34,8 +34,9 @@ iconHeight = "60"
   [params.homeInfoParams]
 Title = "Hello this is Nischal"
 Content = "Exploring book, movies and music"
-   imageUrl= "images/Nischal.jpeg" # optional
-   imageWidth = "200px"
+imageUrl= "images/Nischal.jpeg" # optional
+    imageTitle= "Nischal" # optional
+   imageWidth = "auto"
    imageHeight = "auto"
    
 
