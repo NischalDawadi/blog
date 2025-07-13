@@ -25,7 +25,15 @@ theme = ["hugo-admonitions", "PaperMod"]
    imageWidth = "150px"
    imageHeight = "auto"
    
-  
+  [params.homeInfoParams]
+Title = "Hello this is Nischal"
+Content = "Exploring book, movies and music"
+   imageUrl= "images/Nischal.jpeg" # optional
+   imageWidth = "200px"
+   imageHeight = "auto"
+   
+
+
  [[params.socialIcons]]
   name = "github"
   url = "https://github.com/NischalDawadi"

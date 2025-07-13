@@ -44,9 +44,9 @@ a:hover,
 
 /* ===== Accent Elements ===== */
 
-.nav, .menu {
+/*.nav, .menu {
     background-color: #F5F7FA;
-}
+}*/
 
 .post-entry, .card, .home-info {
     background-color: #E2E8F0; /* Soft Pebble */
@@ -101,5 +101,17 @@ body.dark .tag,
 body.dark .taxonomy-term {
     background-color: #434190; /* Deep Indigo */
     color: #F1F5F9;
+}
+
+/* Make the navbar/header full width */
+.header-wrap {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    border-radius: 0 !important;
+    left: 0;
+    right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
