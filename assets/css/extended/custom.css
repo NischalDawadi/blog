@@ -20,13 +20,12 @@ body {
 
 h1, h2, h3, h4, h5, h6, .site-title {
     font-family: 'DM Serif Display', sans-serif;
-    font-weight: 600;
     letter-spacing: 0.6px;
 }
 
  .menu a {
     font-family: 'Poppins', sans-serif;
-    font-weight: 1.8rem;
+    
 }
 
 
@@ -172,15 +171,14 @@ body.dark .home-info {
 
 /* ====Heading-title==== */
 .post-title {
-    font-size: 1.8rem; /* Try 1.5rem to 2.2rem depending on taste */
-  font-weight: 600;
+    font-size: 1.9rem; /* Try 1.5rem to 2.2rem depending on taste */
   line-height: 1.3;
   margin-bottom: 1rem;
 }
 /* Optional: Adjust mobile scaling */
 @media (max-width: 768px) {
   .single-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 

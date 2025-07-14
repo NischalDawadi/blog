@@ -12,7 +12,7 @@ author= "Nischal Dawadi"
 *Reverend Insanity* by Gu Zhen Ren is not your typical cultivation webnovel. It is a dark, complex and unapologetically philosophical story about a man who refuses to die — not just in body, but in will. Through the eyes of Fang Yuan, the novel explores the price of ambition, the nature of power, and the question: *what does it truly mean to live freely?*
 
 
-## The Gu World: Power Engineered Through Strategy, Not Justice
+### The Gu World: Power Engineered Through Strategy, Not Justice
 
 In the Gu world, everything is a transaction — nothing is free, and no one is safe. Magical creatures called **Gu** grant power, but only to those clever or ruthless enough to use them. Unlike other fantasy systems, cultivation here is not about destiny or righteousness. It is about planning, deception, and overwhelming force.
 
@@ -24,7 +24,7 @@ This sets the tone for everything that follows. It is a system that strips away 
 
 ---
 
-## Fang Yuan: A Man Who Refuses to Bow — Even to Heaven
+### Fang Yuan: A Man Who Refuses to Bow — Even to Heaven
 
 Fang Yuan’s goal is not revenge, not justice, not even wealth. It is **eternal life**. Reborn with the memories of a past life, he walks a path that no one else dares — one paved with blood, betrayal, and unshakable resolve.
 
@@ -37,7 +37,7 @@ What makes him fascinating is not his power, but his discipline. He is not a mad
 
 ---
 
-## The Philosophy of Ren Zhu: Nature’s True Law
+### The Philosophy of Ren Zhu: Nature’s True Law
 
 Threaded through the novel is the chilling yet thought-provoking philosophy of **Ren Zhu**, which teaches that mercy is weakness, and that nature favors those willing to discard emotion for advancement.
 
@@ -47,7 +47,7 @@ This challenges readers: if nature is truly indifferent, why should we cling to 
 
 ---
 
-## Side Characters That Echo Through the Story
+### Side Characters That Echo Through the Story
 
 Though Fang Yuan is the center, several side characters leave deep impressions and elevate the narrative:
 
@@ -59,7 +59,7 @@ Each of these characters, though sometimes short-lived, alters the course of the
 
 ---
 
-## Defying Heaven’s Will: The Battle Against Fate Itself
+### Defying Heaven’s Will: The Battle Against Fate Itself
 
 The most powerful force in the novel isn’t a person — it is **Heaven’s Will**, the divine force that shapes destiny, favors certain outcomes, and preserves cosmic order.
 
@@ -69,7 +69,7 @@ In a world like ours, filled with rules and systems that often feel out of our c
 
 ---
 
-## Final Thoughts: A Brutal, Brilliant Exploration of Human Will
+### Final Thoughts: A Brutal, Brilliant Exploration of Human Will
 
 *Reverend Insanity* is a rare kind of story: one that doesn’t try to comfort you. It doesn’t offer a clean moral path or a satisfying idea of heroism. Instead, it forces you to ask: *What would I sacrifice for my goal?* *Can I face the world as it truly is, not as I wish it to be?*
 
