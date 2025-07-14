@@ -13,7 +13,7 @@ theme = ["hugo-admonitions", "PaperMod"]
   showPostThumbnails = false
   showBreadCrumbs = false
   defaultTheme = "light"
-  mainSections = ["books", "movies","music"]
+  mainSections = ["books","movies","music"]
    hideFooter = true
    
 [params.label]
@@ -30,7 +30,7 @@ apple_touch_icon = "/icons/apple-touch-icon.png"
 
   [params.profileMode]
   enabled= false
- Title = "Hello this is Nischal."
+ Title = "Hi, this is Nischal."
  subtitle = "Exploring book, movies and music."
    imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "title of image as alt" # optional
@@ -38,8 +38,8 @@ apple_touch_icon = "/icons/apple-touch-icon.png"
    imageHeight = "auto"
    
   [params.homeInfoParams]
-Title = "Hello this is Nischal"
-Content = "Exploring book, movies and music"
+Title = "👋 Hi, I'm Nischal."
+Content = "Writing about books, movies, and music."
 imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "Nischal" # optional
    imageWidth = "auto"
@@ -60,23 +60,20 @@ imageUrl= "images/Nischal.jpeg" # optional
   name = "youtube"
   url = "https://www.youtube.com/@dawadinischal"
 
-[menu]
-  [[menu.main]]
-    identifier = "books"
-    name = "Books"
-    url = "/books/"
-    weight = 1
 
-  [[menu.main]]
-    identifier = "movies"
-    name = "Movies"
-    url = "/movies/"
-    weight = 2
 
- [[menu.main]]
-  identifier= "music"
- name = "Music"
- url = "/music/"
- description = "Journey through Music"
-weight = 3
 
+[[menu.main]]
+  name = "📚 Books"
+  url = "/books/"
+  weight = 10
+
+[[menu.main]]
+  name = "🎬 Movies"
+  url = "/movies/"
+  weight = 11
+
+[[menu.main]]
+  name = "🎵 Music"
+  url = "/music/"
+  weight = 12

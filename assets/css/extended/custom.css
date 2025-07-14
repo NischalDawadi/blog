@@ -1,5 +1,12 @@
 /* ===== Google Fonts (Add in head.html) ===== */
 /* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet"> */
+.main {
+    position: relative;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: var(--content-gap) var(--gap) 0;
+}
 
 /* ===== Typography ===== */
 
@@ -17,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .site-title {
     letter-spacing: 0.5px;
 }
 
-.nav a, .menu a {
+ .menu a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -48,7 +55,24 @@ a:hover,
     background-color: #F5F7FA;
 }*/
 
-.post-entry, .card, .home-info {
+
+.nav a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.75rem .5rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.nav a:hover {
+    background: var(--accent-color-light);
+    color: var(--accent-color-dark);
+}
+
+
+
+
+.post-entry, .card {
     background-color: #E2E8F0; /* Soft Pebble */
     border-radius: 1rem;
     padding: 1rem;
@@ -85,7 +109,16 @@ a:hover,
 
 
 .post-entry, .post-card {
-max-width: 900px;
+max-width: 800px;
+}
+
+/* =====Hero card styling===== */
+.home-info {
+  background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 
@@ -119,8 +152,8 @@ body.dark .post-content a:hover {
 
 
 body.dark .post-entry, 
-body.dark .card, 
-body.dark .home-info {
+body.dark .card
+ {
     background-color: #1C2530;
 }
 
@@ -129,5 +162,38 @@ body.dark .taxonomy-term {
     background-color: #434190; /* Deep Indigo */
     color: #F1F5F9;
 }
+body.dark .home-info {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #e0e0f0;
+  }
+
+
+
+
+/* ====Heading-title==== */
+.post-title {
+    font-size: 1.8rem; /* Try 1.5rem to 2.2rem depending on taste */
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+/* Optional: Adjust mobile scaling */
+@media (max-width: 768px) {
+  .single-title {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+:root {
+   
+    --nav-width: 960px;
+    --main-width: 720px;
+    --post-width: 720px;
+    --header-height: 60px;
+    --footer-height: 80px;
+    --radius: 8px;
+   }
 
 

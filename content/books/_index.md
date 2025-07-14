@@ -1,4 +1,4 @@
 ---
-title: "Books"
-description: "A collection of book reviews and analysis."
+title: "📚 Books"
+description: "Personal reviews and reflections on books I've read"
 ---
