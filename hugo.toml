@@ -1,6 +1,6 @@
 baseURL = 'https://codingclinician.netlify.app/'
 languageCode = 'en-us'
-title = 'Home'
+title = 'Nischal Home'
 theme = ["hugo-admonitions", "PaperMod"]
 
 
@@ -16,6 +16,9 @@ theme = ["hugo-admonitions", "PaperMod"]
   mainSections = ["books","movies","music"]
    hideFooter = true
    
+
+[params.label]
+text = "Digital Home"
 
 
 [params.assets]
@@ -55,8 +58,6 @@ imageUrl= "images/Nischal.jpeg" # optional
   [[params.socialIcons]]
   name = "youtube"
   url = "https://www.youtube.com/@dawadinischal"
-
-
 
 
 [[menu.main]]
