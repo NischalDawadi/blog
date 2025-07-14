@@ -16,10 +16,6 @@ theme = ["hugo-admonitions", "PaperMod"]
   mainSections = ["books","movies","music"]
    hideFooter = true
    
-[params.label]
-text = "Home"
-icon = "images/profile.jpg"
-iconHeight = "40"
 
 
 [params.assets]
