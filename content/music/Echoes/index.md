@@ -1,7 +1,8 @@
 +++
 title = 'Echoes: An Underrated Masterpiece'
+summary = "A prog-rock powerhouse biggest craft."
 date = 2025-02-19T22:20:58+05:45
-draft = true
+author= "Nischal Dawadi"
 
 [cover]
   image = "/images/Echoes_cover.jpeg"

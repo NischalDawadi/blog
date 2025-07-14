@@ -1,6 +1,6 @@
 +++
 title = 'Reverend Insanity'
-description= "A thoughtful review of Gu Zhen Ren's webnovel 'Reverend Insanity', exploring the Gu world's philosophy, Fang Yuan’s ambition, and the fight against Heaven's Will."
+summary= "A thoughtful review of Gu Zhen Ren's webnovel 'Reverend Insanity', exploring the Gu world's philosophy, Fang Yuan’s ambition, and the fight against Heaven's Will."
 date= 2025-07-08
 tags= ["Reverend Insanity", "webnovel review", "Fang Yuan", "immortality", "Chinese fantasy"]
 keywords= ["Reverend Insanity review", "Fang Yuan quotes", "Gu world explanation", "Ren Zhu philosophy", "Heaven's Will", "Spectral Soul", "Red Lotus"]

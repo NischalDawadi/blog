@@ -19,14 +19,14 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, .site-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Serif Display', sans-serif;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
 }
 
  .menu a {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 1.8rem;
 }
 
 

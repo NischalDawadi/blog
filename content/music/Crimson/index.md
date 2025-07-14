@@ -3,7 +3,7 @@ title= "Crimson – Edge of Sanity"
 date= 2025-07-13T21:30:00+05:45
 draft= false
 summary= "An ambitious death metal epic that bends genre and time alike"
-
+author= "Nischal Dawadi"
 tags= ["music", "review", "progressive death metal"]
 categories= ["Music Reviews"]
 [cover]

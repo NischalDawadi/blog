@@ -1,7 +1,9 @@
 +++
 title = 'Seven Review'
 date = 2025-02-12T22:39:57+05:45
-draft = true
+summary = "A brief look into the brilliance of david fincher's Se7en."
+author= "Nischal Dawadi"
+
 [cover]
   image = "/images/seven.jpg"
   alt = "Absolute Elsewhere"
