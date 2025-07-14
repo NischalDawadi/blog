@@ -1,6 +1,6 @@
 baseURL = 'https://codingclinician.netlify.app/'
 languageCode = 'en-us'
-title = 'Nischal Home'
+title = 'Home'
 theme = ["hugo-admonitions", "PaperMod"]
 
 
@@ -39,7 +39,7 @@ apple_touch_icon = "/icons/apple-touch-icon.png"
    
   [params.homeInfoParams]
 Title = "👋 Hi, I'm Nischal."
-Content = "Writing about books, movies, and music."
+Content = "When I’m not buried in textbooks, I’m lost in music, films, and fiction. This space is where I explore the art that stays with me — sometimes loud, sometimes subtle, always meaningful."
 imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "Nischal" # optional
    imageWidth = "200px"
