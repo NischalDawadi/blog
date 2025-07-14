@@ -17,9 +17,9 @@ theme = ["hugo-admonitions", "PaperMod"]
    hideFooter = true
    
 [params.label]
-text = "Nischal Home"
+text = "Home"
 icon = "images/profile.jpg"
-iconHeight = "60"
+iconHeight = "40"
 
 
 [params.assets]
@@ -42,7 +42,7 @@ Title = "👋 Hi, I'm Nischal."
 Content = "Writing about books, movies, and music."
 imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "Nischal" # optional
-   imageWidth = "auto"
+   imageWidth = "200px"
    imageHeight = "auto"
    
 

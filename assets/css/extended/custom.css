@@ -196,4 +196,21 @@ body.dark .home-info {
     --radius: 8px;
    }
 
+.profile-shadow {
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: auto;
+  margin-bottom: 1.2rem;
+  max-width: 40vw;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.profile-shadow:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.3),
+    0 0 8px rgba(255, 255, 255, 0.1);
+}
