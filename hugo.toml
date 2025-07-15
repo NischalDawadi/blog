@@ -1,4 +1,4 @@
-baseURL = 'https://codingclinician.netlify.app/'
+baseURL = 'https://nischaldawadi.com.np/'
 languageCode = 'en-us'
 title = 'Nischal Home'
 theme = ["hugo-admonitions", "PaperMod"]
