@@ -28,11 +28,9 @@ h1, h2, h3, h4, h5, h6, .site-title {
     
 }
 
-
-
-
-
-
+.logo a {
+color: #5A67D8;
+}
 
 /* ===== Link & Button Styling ===== */
 
@@ -53,7 +51,6 @@ a:hover,
 /*.nav, .menu {
     background-color: #F5F7FA;
 }*/
-
 
 .nav a {
     font-family: 'Inter', sans-serif;
