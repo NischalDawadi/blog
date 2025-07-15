@@ -1,14 +1,11 @@
 /* ===== Google Fonts (Add in head.html) ===== */
 /* inter-regular - latin */
-
-
-
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-regular - latin */
@@ -17,7 +14,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
  
  
@@ -27,7 +24,7 @@
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/dm-serif-display-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/dm-serif-display-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
