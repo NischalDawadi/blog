@@ -5,7 +5,7 @@ date = 2025-02-19T22:20:58+05:45
 author= "Nischal Dawadi"
 
 [cover]
-  image = "/images/Echoes_cover.jpeg"
+  image = "/images/Echoes_cover.webp"
 +++
 
 Often overshadowed by the prog epic Shine on You Crazy Diamond, Echoes stands as one of Pink Floyd’s most breathtaking achievements, a 24 minutes journey into deep underwater dreamlike soundscapes.
