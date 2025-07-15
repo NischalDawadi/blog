@@ -61,12 +61,14 @@ a:hover,
     letter-spacing: 0.5px;
     padding: 0.5rem .25rem;
     border-radius: 8px;
-    transition: background 0.3s;
-  color: #2D3748; /* Slightly lighter than black */
+      color: #2D3748; /* Slightly lighter than black */
+   transition: transform 0.5s ease; /* smooth move */
 }
+
 .nav a:hover {
-    background: var(--accent-color-light);
-    color: #5A67D8;
+  transform: translateY(-5px); /* gently move up 5px */
+  cursor: pointer;
+    color: #434190; /* Your site’s indigo accent */
 }
 
 
@@ -76,8 +78,18 @@ a:hover,
    /* background-color: #E2E8F0; */ /* Soft Pebble */
     background-color: #FAF3E6; /* Pale Sand */
     border-radius: 1rem;
-    padding: 1rem;
+     padding-top: 2rem;
+  padding-bottom: 2rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.post-entry:hover, .card:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  background-color:  #F5F7FA;
 }
 
 /* Tags or Highlights */

@@ -42,7 +42,7 @@ apple_touch_icon = "/icons/apple-touch-icon.png"
    
   [params.homeInfoParams]
 Title = "👋 Hi, I'm <span class='highlight-name'>Nischal</span>"
-Content = "When I’m not buried in textbooks, I’m lost in music, films, and fiction. This space is where I explore the art that stays with me — sometimes loud, sometimes subtle, always meaningful."
+Content = "Between the quiet moments of life, I’m lost in music, films, and fiction. This space is where I explore the art that stays with me — sometimes loud, sometimes subtle, always meaningful."
 imageUrl= "images/Nischal.jpeg" # optional
     imageTitle= "Nischal" # optional
    imageWidth = "200px"
