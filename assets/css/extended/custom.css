@@ -4,7 +4,7 @@
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url('/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -13,7 +13,7 @@
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   src: url('/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
  
@@ -27,7 +27,7 @@
   src: url('/fonts/dm-serif-display-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
+======================================================
 
 
 
@@ -44,13 +44,13 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F5F7FA; /* Cloud Mist */
-    color: #1A1B1F; /* Charcoal Black */
+
     line-height: 1.6;
 }
 
 
 
-h1, h2, h3, h4, h5, h6, .site-title {
+h1, h2, h3, h4, h5, h6{
     font-family: 'DM Serif Display', sans-serif;
     letter-spacing: 0.6px;
 }
@@ -60,13 +60,10 @@ h1, h2, h3, h4, h5, h6, .site-title {
     
 }
 
-.logo a {
-color: #5A67D8;
-}
 
 /* ===== Link & Button Styling ===== */
 
-a,
+
 .post-content a {
     color: #5A67D8; /* Misty Indigo */
     text-decoration: none;
@@ -84,13 +81,15 @@ a:hover,
     background-color: #F5F7FA;
 }*/
 
+
+
 .nav a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+
+    font-weight: 600;
     letter-spacing: 0.5px;
     padding: 0.5rem .25rem;
     border-radius: 8px;
-      color: #2D3748; /* Slightly lighter than black */
+      color: #000; /*  black */
    transition: transform 0.5s ease; /* smooth move */
 }
 
@@ -229,7 +228,7 @@ body.dark .home-info {
 
 :root {
    
-    --nav-width: 1080px;
+    --nav-width: 80%;
     --main-width: 800px;
     --post-width: 800px;
     --header-height: 60px;
