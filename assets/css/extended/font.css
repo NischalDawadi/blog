@@ -1,0 +1,30 @@
+/* =======================
+   Google Fonts (Add in head.html)
+========================== */
+
+/* Inter - regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/inter-v19-latin-regular.woff2') format('woff2');
+}
+
+/* Poppins - semi-bold */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/poppins-v23-latin-regular.woff2') format('woff2');
+}
+
+/* DM Serif Display - regular */
+@font-face {
+  font-display: swap;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/dm-serif-display-v16-latin-regular.woff2') format('woff2');
+}

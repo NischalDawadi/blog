@@ -1,6 +1,6 @@
 baseURL = 'https://nischaldawadi.com.np/'
 languageCode = 'en-us'
-title = 'Nischal Home'
+title = 'Nischal Dawadi'
 theme = ["hugo-admonitions", "PaperMod"]
 
 
@@ -15,7 +15,7 @@ theme = ["hugo-admonitions", "PaperMod"]
   defaultTheme = "light"
   mainSections = ["books","movies","music"]
    hideFooter = true
-   
+  enableRobotsTXT = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

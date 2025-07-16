@@ -1,0 +1,274 @@
+/* ===== Google Fonts (Add in head.html) ===== */
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+ 
+ 
+ /* dm-serif-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/dm-serif-display-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+======================================================
+
+
+
+.main {
+    position: relative;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: var(--content-gap) var(--gap) 0;
+}
+
+/* ===== Typography ===== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F7FA; /* Cloud Mist */
+
+    line-height: 1.6;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'DM Serif Display', sans-serif;
+    letter-spacing: 0.6px;
+}
+
+ .menu a {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/* ===== Link & Button Styling ===== */
+
+
+.post-content a {
+    color: #5A67D8; /* Misty Indigo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+.post-content a:hover {
+    color: #434190; /* Deep Indigo */
+}
+
+/* ===== Accent Elements ===== */
+
+/*.nav, .menu {
+    background-color: #F5F7FA;
+}*/
+
+
+
+.nav a {
+
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.5rem .25rem;
+    border-radius: 8px;
+    color: #000; /*  black */
+   transition: transform 0.5s ease; /* smooth move */
+}
+
+.nav a:hover {
+font-weight: 800;
+transform: translateY(-5px); /* gently move up 5px */
+cursor: pointer;
+color: #434190; /* Your site’s indigo accent */
+}
+
+
+
+
+.post-entry, .card {
+   /* background-color: #E2E8F0; */ /* Soft Pebble */
+    background-color: #FAF3E6; /* Pale Sand */
+    border-radius: 1rem;
+     padding-top: 2rem;
+  padding-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.post-entry:hover, .card:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  background-color:  #F5F7FA;
+}
+
+/* Tags or Highlights */
+.tag, .taxonomy-term {
+    background-color: #FCD9D9; /* Blush Sand */
+    color: #1A1B1F;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+
+/*=====Aspect-Ratio-CoverImage=====*/
+
+.post-entry .entry-cover {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio => 9 / 16 = 0.5625 * 100 */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-entry .entry-cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.post-entry, .post-card {
+max-width: 800px;
+}
+
+/* =====Hero card styling===== */
+.home-info {
+  background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+
+
+/* ===== Dark Mode Overrides ===== */
+
+body.dark {
+    background-color: #0E141B; /* Midnight Slate */
+    color: #F1F5F9; /* Cloud White */
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark h4, 
+body.dark h5, 
+body.dark h6, 
+body.dark .site-title {
+    color: #F1F5F9;
+}
+
+body.dark a,
+body.dark .post-content a {
+    color: #A3BFFA; /* Soft Lilac */
+}
+
+body.dark a:hover,
+body.dark .post-content a:hover {
+    color: #5A67D8; /* Misty Indigo */
+}
+
+
+body.dark .post-entry, 
+body.dark .card
+ {
+    background-color: #1C2530;
+}
+
+body.dark .tag, 
+body.dark .taxonomy-term {
+    background-color: #434190; /* Deep Indigo */
+    color: #F1F5F9;
+}
+body.dark .home-info {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #e0e0f0;
+  }
+
+
+
+
+/* ====Heading-title==== */
+.post-title {
+    font-size: 1.9rem; /* Try 1.5rem to 2.2rem depending on taste */
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+/* Optional: Adjust mobile scaling */
+@media (max-width: 768px) {
+  .single-title {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+:root {
+   
+    --nav-width: 1080px;
+    --main-width: 800px;
+    --post-width: 800px;
+    --header-height: 60px;
+    --footer-height: 80px;
+    --radius: 8px;
+   }
+
+.profile-shadow {
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: auto;
+  margin-bottom: 1.2rem;
+  max-width: 40vw;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-shadow:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.3),
+    0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+.highlight-name {
+  color: #5A67D8; /* Change to your accent color */
+  font-weight: 600;
+}
+
+
+
+
+
+

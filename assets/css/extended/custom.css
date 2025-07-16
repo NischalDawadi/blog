@@ -1,141 +1,151 @@
-/* ===== Google Fonts (Add in head.html) ===== */
-/* inter-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+
+
+/* =======================
+   CSS Variables
+========================== */
+:root {
+  --nav-width: 1080px;
+  --main-width: 800px;
+  --post-width: 800px;
+  --header-height: 60px;
+  --footer-height: 80px;
+  --radius: 8px;
+
+  /* Colors */
+  --bg-light: #F5F7FA;
+  --bg-card: #FAF3E6;
+  --accent: #5A67D8;
+  --accent-hover: #434190;
+  --tag-bg: #FCD9D9;
+  --text-dark: #1A1B1F;
 }
 
-/* poppins-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
- 
- 
- /* dm-serif-display-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/dm-serif-display-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
-======================================================
-
-
-
-.main {
-    position: relative;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
-    padding: var(--content-gap) var(--gap) 0;
-}
-
-/* ===== Typography ===== */
-
+/* =======================
+   Typography
+========================== */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F5F7FA; /* Cloud Mist */
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
 
-    line-height: 1.6;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 0.6px;
+}
+
+.menu a {
+  font-family: 'Poppins', sans-serif;
 }
 
 
+/* =======================
+   Navigation
+========================== */
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'DM Serif Display', sans-serif;
-    letter-spacing: 0.6px;
+.nav a {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0.25rem;
+  border-radius: 8px;
+  color: #000;
+  transition: transform 0.5s ease, font-weight 0.2s ease;
 }
 
- .menu a {
-    font-family: 'Poppins', sans-serif;
+#menu a {
+    font-size: 16px;
+}
+
+#menu a:hover {
+  font-weight: 800;
+  transform: translateY(-5px);
+    color: var(--accent-hover);
+  cursor: pointer;
+}
+
+
+#menu .active {
+    font-weight: 600;
+    color: var(--accent);
+    border-bottom: 2px solid currentColor;
+}
+
+/* ======================
+           Logo
+======================= */
+.logo,
+#menu {
+    display: flex;
+
+    margin: auto var(--gap);
+}
+
+.logo {
+    flex-wrap: inherit;
+}
+
+.logo a {
+  font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color:#222;
+    font-weight: 600;
     
 }
 
-
-/* ===== Link & Button Styling ===== */
-
-
+/* =======================
+   Links & Buttons
+========================== */
 .post-content a {
-    color: #5A67D8; /* Misty Indigo */
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover,
 .post-content a:hover {
-    color: #434190; /* Deep Indigo */
-}
-
-/* ===== Accent Elements ===== */
-
-/*.nav, .menu {
-    background-color: #F5F7FA;
-}*/
-
-
-
-.nav a {
-
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    padding: 0.5rem .25rem;
-    border-radius: 8px;
-      color: #000; /*  black */
-   transition: transform 0.5s ease; /* smooth move */
-}
-
-.nav a:hover {
-    font-weight: 800;
-  transform: translateY(-5px); /* gently move up 5px */
-  cursor: pointer;
-    color: #434190; /* Your site’s indigo accent */
+  color: var(--accent-hover);
 }
 
 
-
-
+/* =======================
+   Cards and Posts
+========================== */
 .post-entry, .card {
-   /* background-color: #E2E8F0; */ /* Soft Pebble */
-    background-color: #FAF3E6; /* Pale Sand */
-    border-radius: 1rem;
-     padding-top: 2rem;
-  padding-bottom: 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  background-color: var(--bg-card);
   border-radius: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  max-width: 800px;
 }
 
 .post-entry:hover, .card:hover {
-  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
-  background-color:  #F5F7FA;
+  background-color: var(--bg-light);
 }
 
-/* Tags or Highlights */
-.tag, .taxonomy-term {
-    background-color: #FCD9D9; /* Blush Sand */
-    color: #1A1B1F;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
+/* =======================
+   Hero / Intro Card
+========================== */
+.home-info {
+  background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 
-/*=====Aspect-Ratio-CoverImage=====*/
-
+/* =======================
+   Cover Image (Aspect Ratio)
+========================== */
 .post-entry .entry-cover {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio => 9 / 16 = 0.5625 * 100 */
+  padding-top: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
   border-radius: 8px;
 }
@@ -150,93 +160,29 @@ a:hover,
 }
 
 
-.post-entry, .post-card {
-max-width: 800px;
-}
-
-/* =====Hero card styling===== */
-.home-info {
-  background: linear-gradient(135deg, #f0f4ff, #e6ecff);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
-  text-align: center;
+/* =======================
+   Tags / Taxonomy
+========================== */
+.tag, .taxonomy-term {
+  background-color: var(--tag-bg);
+  color: var(--text-dark);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
 }
 
 
-
-/* ===== Dark Mode Overrides ===== */
-
-body.dark {
-    background-color: #0E141B; /* Midnight Slate */
-    color: #F1F5F9; /* Cloud White */
-}
-
-body.dark h1, 
-body.dark h2, 
-body.dark h3, 
-body.dark h4, 
-body.dark h5, 
-body.dark h6, 
-body.dark .site-title {
-    color: #F1F5F9;
-}
-
-body.dark a,
-body.dark .post-content a {
-    color: #A3BFFA; /* Soft Lilac */
-}
-
-body.dark a:hover,
-body.dark .post-content a:hover {
-    color: #5A67D8; /* Misty Indigo */
+/* =======================
+   Highlight Utility
+========================== */
+.highlight-name {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 
-body.dark .post-entry, 
-body.dark .card
- {
-    background-color: #1C2530;
-}
-
-body.dark .tag, 
-body.dark .taxonomy-term {
-    background-color: #434190; /* Deep Indigo */
-    color: #F1F5F9;
-}
-body.dark .home-info {
-    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
-    color: #e0e0f0;
-  }
-
-
-
-
-/* ====Heading-title==== */
-.post-title {
-    font-size: 1.9rem; /* Try 1.5rem to 2.2rem depending on taste */
-  line-height: 1.3;
-  margin-bottom: 1rem;
-}
-/* Optional: Adjust mobile scaling */
-@media (max-width: 768px) {
-  .single-title {
-    font-size: 1.3rem;
-  }
-}
-
-
-
-:root {
-   
-    --nav-width: 1080px;
-    --main-width: 800px;
-    --post-width: 800px;
-    --header-height: 60px;
-    --footer-height: 80px;
-    --radius: 8px;
-   }
-
+/* =======================
+   Profile Image Styling
+========================== */
 .profile-shadow {
   border-radius: 50%;
   border: 4px solid white;
@@ -260,15 +206,66 @@ body.dark .home-info {
 
 
 
+/* =======================
+   Responsive Design
+========================== */
+@media (max-width: 768px) {
 
+  .post-entry, .card {
+    padding: 1rem;
+  }
 
-.highlight-name {
-  color: #5A67D8; /* Change to your accent color */
-  font-weight: 600;
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .profile-shadow {
+    max-width: 60vw;
+  }
 }
 
 
 
+/* =======================
+   Dark Mode
+========================== */
+body.dark {
+  background-color: #0E141B;
+  color: #F1F5F9;
+}
 
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark .site-title {
+  color: #F1F5F9;
+}
 
+body.dark a,
+body.dark .post-content a {
+  color: #A3BFFA;
+}
 
+body.dark a:hover,
+body.dark .post-content a:hover {
+  color: var(--accent);
+}
+
+body.dark .post-entry,
+body.dark .card {
+  background-color: #1C2530;
+}
+
+body.dark .tag,
+body.dark .taxonomy-term {
+  background-color: var(--accent-hover);
+  color: #F1F5F9;
+}
+
+body.dark .home-info {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  color: #e0e0f0;
+}
