@@ -94,6 +94,7 @@ a:hover,
 }
 
 .nav a:hover {
+    font-weight: 800;
   transform: translateY(-5px); /* gently move up 5px */
   cursor: pointer;
     color: #434190; /* Your site’s indigo accent */
@@ -228,7 +229,7 @@ body.dark .home-info {
 
 :root {
    
-    --nav-width: 80%;
+    --nav-width: 1080px;
     --main-width: 800px;
     --post-width: 800px;
     --header-height: 60px;
