@@ -16,7 +16,7 @@ theme = ["hugo-admonitions", "PaperMod"]
   mainSections = ["books","movies","music"]
    hideFooter = true
   enableRobotsTXT = true
-  
+  env = "production"
 
 [markup]
   [markup.goldmark]
