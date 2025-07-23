@@ -23,6 +23,12 @@ theme = ["hugo-admonitions", "PaperMod"]
     [markup.goldmark.renderer]
       unsafe = true
 
+   
+   [sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+   
+
 [params.label]
 text = "Digital Home"
 
@@ -41,7 +47,7 @@ apple_touch_icon = "/icons/apple-touch-icon.png"
     imageTitle= "title of image as alt" # optional
    imageWidth = "150px"
    imageHeight = "auto"
-   
+
   [params.homeInfoParams]
 Title = "👋 Hi, I'm <span class='highlight-name'>Nischal</span>"
 Content = "Between the quiet moments of life, I’m lost in music, films, and fiction. This space is where I explore the art that stays with me — sometimes loud, sometimes subtle, always meaningful."
