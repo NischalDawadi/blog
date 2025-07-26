@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/music/crimson/</guid>
       <description>An ambitious death metal epic that bends genre and time alike</description>
     </item>
+    <item>
+      <title>Echoes: An Underrated Masterpiece</title>
+      <link>http://localhost:1313/music/echoes/</link>
+      <pubDate>Wed, 19 Feb 2025 22:20:58 +0545</pubDate>
+      <guid>http://localhost:1313/music/echoes/</guid>
+      <description>A prog-rock powerhouse biggest craft.</description>
+    </item>
   </channel>
 </rss>

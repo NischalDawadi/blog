@@ -3,7 +3,7 @@ title = 'Echoes: An Underrated Masterpiece'
 summary = "A prog-rock powerhouse biggest craft."
 date = 2025-02-19T22:20:58+05:45
 author= "Nischal Dawadi"
-
+categories= ["Music Reviews"]
 [cover]
   image = "/images/Echoes_cover.webp"
 +++

@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/categories/music-reviews/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Movie Reviews</title>
+      <link>http://localhost:1313/categories/movie-reviews/</link>
+      <pubDate>Wed, 12 Feb 2025 22:39:57 +0545</pubDate>
+      <guid>http://localhost:1313/categories/movie-reviews/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
