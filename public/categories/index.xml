@@ -6,20 +6,20 @@
     <description>Recent content in Categories on Nischal Dawadi</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Jul 2025 21:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jul 2025 20:43:34 +0545</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Movie Reviews</title>
+      <link>http://localhost:1313/categories/movie-reviews/</link>
+      <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
+      <guid>http://localhost:1313/categories/movie-reviews/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Music Reviews</title>
       <link>http://localhost:1313/categories/music-reviews/</link>
       <pubDate>Sun, 13 Jul 2025 21:30:00 +0545</pubDate>
       <guid>http://localhost:1313/categories/music-reviews/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Movie Reviews</title>
-      <link>http://localhost:1313/categories/movie-reviews/</link>
-      <pubDate>Wed, 12 Feb 2025 22:39:57 +0545</pubDate>
-      <guid>http://localhost:1313/categories/movie-reviews/</guid>
       <description></description>
     </item>
   </channel>
