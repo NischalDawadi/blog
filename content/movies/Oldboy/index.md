@@ -23,7 +23,7 @@ This quote perfectly captures the essence of the film. The cruel world laughs wi
 At first oldboy seems like ordinary story about Oh Dae-su, a man who’s kidnapped and imprisoned for 15 years in a private cell. He doesn’t know who locked him up or why. When he’s suddenly released, the real horror begins—not physical confinement this time, but a psychological labyrinth of revenge, manipulation, and buried secrets.
 {{< figure align=center src="/images/Prison.webp" >}}
 
-The plot unravels like a twisted puzzle. Every time I thought I understood where it was going, the story pulled the rug out from under me. It’s paced perfectly—rarely dragging, always building toward something more emotionally wrenching.
+The plot unravels like a twisted puzzle. Every time I thought I understood where it was going, the story pulled the rug out from under me. It’s paced perfectly—rarely dragging, always building toward something more emotionally **wrenching**.
 
 What hooked me wasn't just the mystery of who was behind it all, but why. And when that why was finally revealed… it left me breathless, horrified, and in awe of the storytelling
 
@@ -34,6 +34,11 @@ This isn’t just a film about **revenge**— it’s a film about what revenge d
 It’s hard to talk about the themes of Oldboy without diving into **spoilers**, but I’ll say this: it explores love, grief, and vengeance in forms I’ve never seen before—and maybe never want to see again.
 
 The loneliness in this film isn’t the kind you get from being alone in a room. It’s the kind that comes from being unseen, misunderstood, or consumed by guilt. It made me think about the things we bury just to keep moving, and what happens when those things come clawing back.
+
+>[!QUOTE]
+>“Be it rain of sand or a rock, in water they sink the same.”
+
+This line stayed with me—because in the world of Oldboy, even a seemingly innocent mistake can spiral into **devastation**. The weight of an action isn’t always measured by intent, but by its ***consequences***. And once the damage is done, there’s no telling what it might pull down with it.
 
 It dares to touch subjects that feel **radioactive**. And I still don’t know how to talk about them. But maybe that’s the point.
 
@@ -52,6 +57,8 @@ I finished the film, turned off my laptop, and stared at the glow from my phone 
 
 The antagonist isn't just evil. He's hurt. And that hurt spreads like a virus. Oldboy makes you ask: who’s really being punished, and who’s still imprisoned?
 {{< figure align=center src="/images/Villian.webp" >}}
+
+
 
 Sometimes, I wonder if I wish I hadn’t watched it. But then I think—no. I needed to. Because some stories aren’t meant to comfort. Some are meant to pull the ground out from under you.
 
