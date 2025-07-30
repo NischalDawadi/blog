@@ -13,7 +13,7 @@
         {{- $processableFormats = $processableFormats | append "webp" }}
       {{- end }}
       {{- $prod := or (hugo.IsProduction) (eq site.Params.env "production") }}
-      {{- if and (in $processableFormats $img.MediaType.SubType) $prod }}
+      {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
         {{- if and .imageWidth .imageHeight }}
           {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
         {{- else if .imageWidth }}
@@ -31,11 +31,9 @@
         title="{{ .imageTitle }}"
         height="{{ .imageHeight | default 200 }}"
         width="{{ .imageWidth | default 200 }}"
-        style="border-radius: 50%; border: 4px solid white; margin: auto;"
       />
   {{- else }}
     <img
-      loading="lazy"
       draggable="false"
       src="{{ .imageUrl | absURL }}"
         class="profile-shadow"
@@ -43,7 +41,6 @@
       title="{{ .imageTitle }}"
       height="{{ .imageHeight | default 200 }}"
       width="{{ .imageWidth | default 200 }}"
-      style="border-radius: 50%; border: 2px solid white; margin: auto; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);"
     />
   {{- end }}
 {{- end }}
