@@ -1,50 +1,57 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info text-center" style="padding: 1rem;">
   <div class="profile_inner mb-4" style="display: flex; justify-content: center;">
+
 {{- if .imageUrl }}
   {{- $img := "" }}
   {{- if not (urls.Parse .imageUrl).IsAbs }}
-                {{- $img = resources.Get .imageUrl }}
-                
+    {{- $img = resources.Get .imageUrl }}
+  {{- end }}
+
+  {{- if $img }}
+    {{- $processableFormats := slice "jpg" "jpeg" "png" "tif" "bmp" "gif" }}
+    {{- if hugo.IsExtended }}
+      {{- $processableFormats = $processableFormats | append "webp" }}
     {{- end }}
-    {{- if $img }}
-      {{- $processableFormats := slice "jpg" "jpeg" "png" "tif" "bmp" "gif" }}
-      {{- if hugo.IsExtended }}
-        {{- $processableFormats = $processableFormats | append "webp" }}
+
+    {{- $prod := or (hugo.IsProduction) (eq site.Params.env "production") }}
+    {{- if and (in $processableFormats $img.MediaType.SubType) $prod }}
+      {{- if and .imageWidth .imageHeight }}
+        {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+      {{- else if .imageWidth }}
+        {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+      {{- else if .imageHeight }}
+        {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+      {{- else }}
+        {{- $img = $img.Resize "200x200" }}
       {{- end }}
-      {{- $prod := or (hugo.IsProduction) (eq site.Params.env "production") }}
-      {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-        {{- if and .imageWidth .imageHeight }}
-          {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
-        {{- else if .imageWidth }}
-          {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
-        {{- else if .imageHeight }}
-          {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
-        {{- else }}
-          {{- $img = $img.Resize "200x200" }}
-        {{- end }}
-      {{- end }}
-      <img
-        draggable="false"
-        src="{{ $img.Permalink }}"
-        alt="{{ .imageTitle | default "Profile image" }}"
-        title="{{ .imageTitle }}"
-        height="{{ .imageHeight | default 200 }}"
-        width="{{ .imageWidth | default 200 }}"
-      />
-  {{- else }}
+    {{- end }}
+
     <img
       draggable="false"
-      src="{{ .imageUrl | absURL }}"
-        class="profile-shadow"
+      loading="lazy"
+      src="{{ $img.Permalink }}"
       alt="{{ .imageTitle | default "Profile image" }}"
       title="{{ .imageTitle }}"
       height="{{ .imageHeight | default 200 }}"
       width="{{ .imageWidth | default 200 }}"
+      style="border-radius: 50%; border: 4px solid white; margin: auto;"
+    />
+
+  {{- else }}
+    <img
+      loading="lazy"
+      draggable="false"
+      src="{{ .imageUrl | absURL }}"
+      class="profile-shadow"
+      alt="{{ .imageTitle | default "Profile image" }}"
+      title="{{ .imageTitle }}"
+      height="{{ .imageHeight | default 200 }}"
+      width="{{ .imageWidth | default 200 }}"
+      style="border-radius: 50%; border: 2px solid white; margin: auto; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);"
     />
   {{- end }}
 {{- end }}
-
   </div>
 
   <header class="entry-header" style="text-align: center;">
