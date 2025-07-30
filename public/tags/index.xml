@@ -9,10 +9,31 @@
     <lastBuildDate>Sun, 27 Jul 2025 20:43:34 +0545</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Movie</title>
-      <link>http://localhost:1313/tags/movie/</link>
+      <title>Dark Themes</title>
+      <link>http://localhost:1313/tags/dark-themes/</link>
       <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
-      <guid>http://localhost:1313/tags/movie/</guid>
+      <guid>http://localhost:1313/tags/dark-themes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emotional Impact</title>
+      <link>http://localhost:1313/tags/emotional-impact/</link>
+      <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
+      <guid>http://localhost:1313/tags/emotional-impact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Film Review</title>
+      <link>http://localhost:1313/tags/film-review/</link>
+      <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
+      <guid>http://localhost:1313/tags/film-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Korean Cinema</title>
+      <link>http://localhost:1313/tags/korean-cinema/</link>
+      <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
+      <guid>http://localhost:1313/tags/korean-cinema/</guid>
       <description></description>
     </item>
     <item>
@@ -23,10 +44,24 @@
       <description></description>
     </item>
     <item>
-      <title>Review</title>
-      <link>http://localhost:1313/tags/review/</link>
+      <title>Personal Essay</title>
+      <link>http://localhost:1313/tags/personal-essay/</link>
       <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
-      <guid>http://localhost:1313/tags/review/</guid>
+      <guid>http://localhost:1313/tags/personal-essay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Psychological</title>
+      <link>http://localhost:1313/tags/psychological/</link>
+      <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
+      <guid>http://localhost:1313/tags/psychological/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Revenge Films</title>
+      <link>http://localhost:1313/tags/revenge-films/</link>
+      <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
+      <guid>http://localhost:1313/tags/revenge-films/</guid>
       <description></description>
     </item>
     <item>
@@ -41,6 +76,13 @@
       <link>http://localhost:1313/tags/progressive-death-metal/</link>
       <pubDate>Sun, 13 Jul 2025 21:30:00 +0545</pubDate>
       <guid>http://localhost:1313/tags/progressive-death-metal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>http://localhost:1313/tags/review/</link>
+      <pubDate>Sun, 13 Jul 2025 21:30:00 +0545</pubDate>
+      <guid>http://localhost:1313/tags/review/</guid>
       <description></description>
     </item>
     <item>

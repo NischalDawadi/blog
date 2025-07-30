@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/books/</loc>
+    <lastmod>2025-07-28T17:34:57+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/books/mistborn/</loc>
+    <lastmod>2025-07-28T17:34:57+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-28T17:34:57+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>http://localhost:1313/movies/</loc>
     <lastmod>2025-07-27T20:43:34+05:45</lastmod>
     <changefreq>weekly</changefreq>
@@ -12,17 +27,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/movie/</loc>
+    <loc>http://localhost:1313/tags/dark-themes/</loc>
+    <lastmod>2025-07-27T20:43:34+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/emotional-impact/</loc>
+    <lastmod>2025-07-27T20:43:34+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/film-review/</loc>
+    <lastmod>2025-07-27T20:43:34+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/korean-cinema/</loc>
     <lastmod>2025-07-27T20:43:34+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>http://localhost:1313/categories/movie-reviews/</loc>
-    <lastmod>2025-07-27T20:43:34+05:45</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-27T20:43:34+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +62,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/review/</loc>
+    <loc>http://localhost:1313/tags/personal-essay/</loc>
+    <lastmod>2025-07-27T20:43:34+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/psychological/</loc>
+    <lastmod>2025-07-27T20:43:34+05:45</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/revenge-films/</loc>
     <lastmod>2025-07-27T20:43:34+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -72,8 +107,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>http://localhost:1313/books/</loc>
-    <lastmod>2025-07-08T22:20:58+05:45</lastmod>
+    <loc>http://localhost:1313/tags/review/</loc>
+    <lastmod>2025-07-13T21:30:00+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>

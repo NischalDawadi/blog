@@ -31,7 +31,7 @@
         title="{{ .imageTitle }}"
         height="{{ .imageHeight | default 200 }}"
         width="{{ .imageWidth | default 200 }}"
-        style="border-radius: 50%; max-width: 40vw; height: auto; border: 4px solid white; margin: auto;"
+        style="border-radius: 50%; border: 4px solid white; margin: auto;"
       />
   {{- else }}
     <img
@@ -43,7 +43,7 @@
       title="{{ .imageTitle }}"
       height="{{ .imageHeight | default 200 }}"
       width="{{ .imageWidth | default 200 }}"
-      style="border-radius: 50%; max-width: 40vw; height: auto; border: 2px solid white; margin: auto; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);"
+      style="border-radius: 50%; border: 2px solid white; margin: auto; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);"
     />
   {{- end }}
 {{- end }}
