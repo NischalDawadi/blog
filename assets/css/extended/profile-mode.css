@@ -1,0 +1,16 @@
+.profile_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.profile_inner img {
+  border-radius: 50%;                      /* Circular */
+  border: 2px solid  #F5F7FA; /* Subtle border */
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);/* Depth/shadow */
+  object-fit: cover;           /* Keeps image from stretching */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
