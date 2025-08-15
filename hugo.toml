@@ -2,7 +2,7 @@ baseURL = 'https://nischaldawadi.com.np/'
 languageCode = 'en-us'
 title = 'Nischal Dawadi'
 theme = ["hugo-admonitions", "PaperMod"]
-
+pagination.pagerSize = 4
 
 [params]
   showShareButtons = false
@@ -31,8 +31,6 @@ theme = ["hugo-admonitions", "PaperMod"]
 
 [params.label]
 text = "Digital Home"
-
-
 [params.assets]
 favicon = "/icons/favicon.ico"
 favicon16x16 = "/icons/favicon-16x16.png"
