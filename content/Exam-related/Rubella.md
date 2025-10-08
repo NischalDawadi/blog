@@ -14,7 +14,7 @@ author= "Nischal Dawadi"
 |**Surveillance & lab system**|Strengthened disease surveillance (case-based), congenital rubella syndrome monitoring, lab algorithms. ([World Health Organization](https://www.who.int/nepal/news/detail/18-08-2025-nepal-eliminates-rubella?utm_source=chatgpt.com "Nepal eliminates rubella"))|
 
 ---
-### 1. **Definition 
+### 1.bDefinition 
 
 - **Rubella elimination** = Interruption of endemic rubella virus transmission in a defined geographic area for ≥12 months, with a high-quality surveillance system in place.
 
@@ -22,7 +22,7 @@ author= "Nischal Dawadi"
 
 ---
 
-### 2. **Background **
+### 2. Background 
 
 - Rubella causes mild illness but is dangerous in pregnancy → congenital rubella syndrome (CRS).
 
@@ -33,7 +33,7 @@ author= "Nischal Dawadi"
 
 ---
 
-### 3. **Key Interventions **
+### 3. Key Interventions 
 
 Nepal used a **multi-pronged epidemiological strategy**:
 
@@ -44,7 +44,7 @@ Nepal used a **multi-pronged epidemiological strategy**:
 - **Second dose** added in **2016** for stronger immunity.
 
 
-**b. Mass immunization campaigns**
+**b. Mass immunization campaigns
 
 - Nationwide rubella / measles–rubella (MR) campaigns in **2012, 2016, 2020, 2024**.
 
@@ -83,7 +83,7 @@ Nepal used a **multi-pronged epidemiological strategy**:
 
 ---
 
-### 4. **Results / Outcome **
+### 4. Results / Outcome 
 
 - **Nepal verified rubella elimination on 18 August 2025.**
 
@@ -92,7 +92,7 @@ Nepal used a **multi-pronged epidemiological strategy**:
 
 ---
 
-### 5. **Conclusion & Future Implications **
+### 5. Conclusion & Future Implications 
 
 - Nepal’s success shows strong immunization + surveillance can eliminate vaccine-preventable diseases.
 
