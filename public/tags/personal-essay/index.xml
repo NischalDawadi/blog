@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/personal-essay/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oldboy (2003) – A Disturbing Masterpiece That Shook Me</title>
-      <link>http://localhost:1313/movies/oldboy/</link>
+      <link>http://localhost:1313/posts/movies/oldboy/</link>
       <pubDate>Sun, 27 Jul 2025 20:43:34 +0545</pubDate>
-      <guid>http://localhost:1313/movies/oldboy/</guid>
+      <guid>http://localhost:1313/posts/movies/oldboy/</guid>
       <description>My personal reflection on Park Chan-wook’s Oldboy (2003), a disturbing yet poetic film that dives into revenge, identity, and moral collapse.</description>
     </item>
   </channel>

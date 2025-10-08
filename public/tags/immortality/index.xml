@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/immortality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reverend Insanity</title>
-      <link>http://localhost:1313/books/reverend_insanity/</link>
+      <link>http://localhost:1313/posts/books/reverend_insanity/</link>
       <pubDate>Tue, 08 Jul 2025 22:20:58 +0545</pubDate>
-      <guid>http://localhost:1313/books/reverend_insanity/</guid>
+      <guid>http://localhost:1313/posts/books/reverend_insanity/</guid>
       <description>A thoughtful review of Gu Zhen Ren&amp;rsquo;s webnovel &amp;lsquo;Reverend Insanity&amp;rsquo;, exploring the Gu world&amp;rsquo;s philosophy, Fang Yuan’s ambition, and the fight against Heaven&amp;rsquo;s Will.</description>
     </item>
   </channel>

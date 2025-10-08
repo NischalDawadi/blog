@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Nischal Home</title>
+    <title>Posts on Nischal Dawadi</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Nischal Home</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <description>Recent content in Posts on Nischal Dawadi</description>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2025 22:39:57 +0545</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Seven Review</title>
-      <link>http://localhost:1313/posts/movie/seven-review/</link>
-      <pubDate>Wed, 12 Feb 2025 22:39:57 +0545</pubDate>
-      <guid>http://localhost:1313/posts/movie/seven-review/</guid>
-      <description>&lt;p&gt;Seven - Movie-Review&lt;/p&gt;
-&lt;p&gt;David Fincher&amp;rsquo;s Se7en meticulously builds up tension, culminating in an ending that is as shocking as it is inevitable. John Doe, played chillingly by Kevin Spacey, orchestrates his own demise with precision. His embodiment of the seven deadly sins culminates in Wrath, the final and most devastating sin, forcing Detective Mills (Brad Pitt) into becoming a pawn in his twisted vision of justice. The film’s nihilistic conclusion leaves the audience disturbed yet in awe of its thematic execution.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Book review</title>
-      <link>http://localhost:1313/posts/books/alchemist_review/</link>
-      <pubDate>Wed, 12 Feb 2025 21:24:05 +0545</pubDate>
-      <guid>http://localhost:1313/posts/books/alchemist_review/</guid>
-      <description>&lt;p&gt;The Alchemist – Book Review&lt;/p&gt;
-&lt;p&gt;📖 By Paulo Coelho&lt;/p&gt;
-&lt;p&gt;🌟 Rating: 4.5/5&lt;/p&gt;
-&lt;p&gt;🔍 Summary&lt;/p&gt;
-&lt;p&gt;The Alchemist follows Santiago, a young shepherd from Spain, who dreams of discovering a hidden treasure in Egypt. Along his journey, he meets a gypsy fortune teller, a king, and an alchemist, each guiding him toward his Personal Legend—his true purpose in life. Through trials, love, and self-discovery, Santiago learns that &amp;ldquo;when you want something, all the universe conspires in helping you to achieve it.&amp;rdquo;&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

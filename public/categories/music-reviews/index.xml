@@ -10,23 +10,23 @@
     <atom:link href="http://localhost:1313/categories/music-reviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I Think Prog Music Is the Ultimate Form of Human Expression</title>
-      <link>http://localhost:1313/music/prog-music/</link>
+      <link>http://localhost:1313/posts/music/prog-music/</link>
       <pubDate>Fri, 15 Aug 2025 10:15:00 +0545</pubDate>
-      <guid>http://localhost:1313/music/prog-music/</guid>
+      <guid>http://localhost:1313/posts/music/prog-music/</guid>
       <description>From the brooding depths of Blackwater Park to the soaring organ lines of Close to the Edge, my journey through prog revealed why I see it as the purest human expression.</description>
     </item>
     <item>
       <title>Crimson – Edge of Sanity</title>
-      <link>http://localhost:1313/music/crimson/</link>
+      <link>http://localhost:1313/posts/music/crimson/</link>
       <pubDate>Sun, 13 Jul 2025 21:30:00 +0545</pubDate>
-      <guid>http://localhost:1313/music/crimson/</guid>
+      <guid>http://localhost:1313/posts/music/crimson/</guid>
       <description>An ambitious death metal epic that bends genre and time alike</description>
     </item>
     <item>
       <title>Echoes: An Underrated Masterpiece</title>
-      <link>http://localhost:1313/music/echoes/</link>
+      <link>http://localhost:1313/posts/music/echoes/</link>
       <pubDate>Wed, 19 Feb 2025 22:20:58 +0545</pubDate>
-      <guid>http://localhost:1313/music/echoes/</guid>
+      <guid>http://localhost:1313/posts/music/echoes/</guid>
       <description>A prog-rock powerhouse biggest craft.</description>
     </item>
   </channel>

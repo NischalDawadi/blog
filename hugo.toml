@@ -13,7 +13,7 @@ pagination.pagerSize = 4
   showPostThumbnails = false
   showBreadCrumbs = false
   defaultTheme = "light"
-  mainSections = ["books","movies","music"]
+  mainSections = ["books","movies","music","posts"]
    hideFooter = true
   enableRobotsTXT = true
   env = "production"
@@ -72,15 +72,22 @@ imageUrl= "images/Nischal.webp" # optional
 
 [[menu.main]]
   name = "📚 Books"
-  url = "/books/"
+  url = "/posts/books/"
   weight = 10
 
 [[menu.main]]
   name = "🎬 Movies"
-  url = "/movies/"
+  url = "/posts/movies/"
   weight = 11
 
 [[menu.main]]
   name = "🎵 Music"
-  url = "/music/"
+  url = "/posts/music/"
   weight = 12
+  
+  [[menu.main]]
+  name = " Exam"
+  url = "/Exam-related/"
+  weight = 14
+  
+

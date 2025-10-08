@@ -4,17 +4,17 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Posts | Nischal Home</title>
+<meta name="robots" content="index, follow">
+<title>Posts | Nischal Dawadi</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Nischal Home">
+<meta name="description" content="Posts - Nischal Dawadi">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6f574f714426525d85428063391e57744745c10df809fbb0f7faf908351c7c43.css" integrity="sha256-b1dPcUQmUl2FQoBjOR5XdEdFwQ34Cfuw9/r5CDUcfEM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/icons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/icons/apple-touch-icon.png">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
@@ -28,44 +28,35 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
+</noscript><meta property="og:url" content="http://localhost:1313/posts/">
+  <meta property="og:site_name" content="Nischal Dawadi">
+  <meta property="og:title" content="Posts">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="">
 
-            .list {
-                background: var(--theme);
-            }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -74,7 +65,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Nischal Home (Alt + H)">Nischal Home</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Home (Alt + H)">Digital Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -96,87 +87,119 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
+             
             </div>
         </div>
-        <ul id="menu">
+
+        
+        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="menu hidden">
             <li>
-                <a href="http://localhost:1313/books/" title="Books">
-                    <span>Books</span>
+                <a href="http://localhost:1313/posts/books/" title="📚 Books">
+                    <span>📚 Books</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/movie/" title="Movies">
-                    <span>Movies</span>
+                <a href="http://localhost:1313/posts/movies/" title="🎬 Movies">
+                    <span>🎬 Movies</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/music/" title="🎵 Music">
+                    <span>🎵 Music</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/exam-related/" title=" Exam">
+                    <span> Exam</span>
                 </a>
             </li>
         </ul>
     </nav>
-</header>
-<main class="main"> 
+</header><main class="main"> 
 <header class="page-header">
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Seven Review
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+    <h2 class="entry-hint-parent">🎵 Music
     </h2>
   </header>
   <div class="entry-content">
-    <p>Seven - Movie-Review
-David Fincher’s Se7en meticulously builds up tension, culminating in an ending that is as shocking as it is inevitable. John Doe, played chillingly by Kevin Spacey, orchestrates his own demise with precision. His embodiment of the seven deadly sins culminates in Wrath, the final and most devastating sin, forcing Detective Mills (Brad Pitt) into becoming a pawn in his twisted vision of justice. The film’s nihilistic conclusion leaves the audience disturbed yet in awe of its thematic execution.
-...</p>
+    <p></p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-12 22:39:57 +0545 +0545'>February 12, 2025</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Seven Review" href="http://localhost:1313/posts/movie/seven-review/"></a>
+  <footer class="entry-footer"><span title='2025-08-15 10:15:00 +0545 +0545'>August 15, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to 🎵 Music" href="http://localhost:1313/posts/music/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Book review
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+    <h2 class="entry-hint-parent">🎬 Movies
     </h2>
   </header>
   <div class="entry-content">
-    <p>The Alchemist – Book Review
-📖 By Paulo Coelho
-🌟 Rating: 4.5/5
-🔍 Summary
-The Alchemist follows Santiago, a young shepherd from Spain, who dreams of discovering a hidden treasure in Egypt. Along his journey, he meets a gypsy fortune teller, a king, and an alchemist, each guiding him toward his Personal Legend—his true purpose in life. Through trials, love, and self-discovery, Santiago learns that “when you want something, all the universe conspires in helping you to achieve it.”
-...</p>
+    <p></p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-12 21:24:05 +0545 +0545'>February 12, 2025</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Book review" href="http://localhost:1313/posts/books/alchemist_review/"></a>
+  <footer class="entry-footer"><span title='2025-07-27 20:43:34 +0545 +0545'>July 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to 🎬 Movies" href="http://localhost:1313/posts/movies/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">📚 Books
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-08 22:20:58 +0545 +0545'>July 8, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to 📚 Books" href="http://localhost:1313/posts/books/"></a>
 </article>
     </main>
     
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Nischal Home</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><footer class="footer">
+    <span>
+        © 2025 · Designed & Maintained by Nischal Dawadi
+    </span>
+</footer>
+<script>
+    
+    
+    let b = document.querySelector("#menu-trigger")
+    let m = document.querySelector(".menu")
+    b.addEventListener("click", function () {
+        m.classList.toggle("hidden")
+    });
+    
+    document.body.addEventListener('click', function (event) {
+        if (!b.contains(event.target)) {
+            m.classList.add("hidden")
+        }
+    });
+    
+</script>
 
 <script>
     let menu = document.getElementById('menu')
