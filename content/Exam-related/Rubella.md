@@ -14,7 +14,7 @@ author= "Nischal Dawadi"
 |**Surveillance & lab system**|Strengthened disease surveillance (case-based), congenital rubella syndrome monitoring, lab algorithms. ([World Health Organization](https://www.who.int/nepal/news/detail/18-08-2025-nepal-eliminates-rubella?utm_source=chatgpt.com "Nepal eliminates rubella"))|
 
 ---
-### 1.bDefinition 
+### 1.Definition 
 
 - **Rubella elimination** = Interruption of endemic rubella virus transmission in a defined geographic area for ≥12 months, with a high-quality surveillance system in place.
 
