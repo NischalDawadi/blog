@@ -1,4 +1,4 @@
 ---
-title: "🎵 Music"
-description: "Album reviews, favorite tracks, and sonic explorations."
+title: "💻 Tech"
+description: "Tech insights, tutorials and reviews. "
 ---
