@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/posts/movies/oldboy/</guid>
       <description>My personal reflection on Park Chan-wook’s Oldboy (2003), a disturbing yet poetic film that dives into revenge, identity, and moral collapse.</description>
     </item>
-    <item>
-      <title>Seven Review</title>
-      <link>http://localhost:1313/posts/movies/seven/</link>
-      <pubDate>Wed, 12 Feb 2025 22:39:57 +0545</pubDate>
-      <guid>http://localhost:1313/posts/movies/seven/</guid>
-      <description>A brief look into the brilliance of david fincher&amp;rsquo;s Se7en.</description>
-    </item>
   </channel>
 </rss>

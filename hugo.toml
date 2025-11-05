@@ -13,10 +13,11 @@ pagination.pagerSize = 4
   showPostThumbnails = false
   showBreadCrumbs = false
   defaultTheme = "light"
-  mainSections = ["books","movies","music","posts"]
+  mainSections = ["books","movies","music","posts","tech"]
    hideFooter = true
   enableRobotsTXT = true
   env = "production"
+  ShowCodeCopyButtons= true
 
 [markup]
   [markup.goldmark]
@@ -63,7 +64,7 @@ imageUrl= "images/Nischal.webp" # optional
 
 [[params.socialIcons]]
     name = "email"
-    url = "https://gmail.com/jamesdawadi13@gmail.com"
+    url = "mailto:jamesdawadi13@gmail.com"
 
   [[params.socialIcons]]
   name = "youtube"
@@ -73,7 +74,7 @@ imageUrl= "images/Nischal.webp" # optional
 [[menu.main]]
   name = "📚 Books"
   url = "/posts/books/"
-  weight = 10
+  weight = 14
 
 [[menu.main]]
   name = "🎬 Movies"
@@ -86,8 +87,8 @@ imageUrl= "images/Nischal.webp" # optional
   weight = 12
   
   [[menu.main]]
-  name = " Exam"
-  url = "/Exam-related/"
-  weight = 14
+  name = "💻Tech"
+  url = "/posts/tech"
+  weight = 9
   
 

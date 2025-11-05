@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Post-install setup for Fedora Linux | Nischal Dawadi</title>
+<meta name="keywords" content="linux, kde, fedora">
+<meta name="description" content="Small guide to post install setup for fedora.">
+<meta name="author" content="Nischal Dawadi">
+<link rel="canonical" href="http://localhost:1313/posts/tech/fedora-post-install/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6f574f714426525d85428063391e57744745c10df809fbb0f7faf908351c7c43.css" integrity="sha256-b1dPcUQmUl2FQoBjOR5XdEdFwQ34Cfuw9/r5CDUcfEM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/icons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/icons/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/tech/fedora-post-install/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/posts/tech/fedora-post-install/">
+  <meta property="og:site_name" content="Nischal Dawadi">
+  <meta property="og:title" content="Post-install setup for Fedora Linux">
+  <meta property="og:description" content="Small guide to post install setup for fedora.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-05T17:20:58+05:45">
+    <meta property="article:modified_time" content="2025-11-05T17:20:58+05:45">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Fedora">
+    <meta property="og:image" content="http://localhost:1313/images/fedora.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/fedora.jpg">
+<meta name="twitter:title" content="Post-install setup for Fedora Linux">
+<meta name="twitter:description" content="Small guide to post install setup for fedora.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "🎵 Music",
+      "item": "http://localhost:1313/posts/tech/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Post-install setup for Fedora Linux",
+      "item": "http://localhost:1313/posts/tech/fedora-post-install/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Post-install setup for Fedora Linux",
+  "name": "Post-install setup for Fedora Linux",
+  "description": "Small guide to post install setup for fedora.",
+  "keywords": [
+    "linux", "kde", "fedora"
+  ],
+  "articleBody": "Fedora Post-Install Setup Guide A minimal setup reference for Fedora users to enable essential repositories, drivers, codecs, and performance tweaks.\nRPM Fusion \u0026 Terra Fedora ships with several repositories disabled by default.\nTo access free and non-free software like Steam, Discord, or certain codecs, enable them:\nsudo dnf install \\ https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \\ https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm To enable Terra:\nsudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release Update appstream metadata:\nsudo dnf group upgrade core sudo dnf4 group install core Update System Use the Software Center → Update\nor run:\nsudo dnf -y update Then reboot your system.\nFirmware If your device supports updates through LVFS, refresh and apply firmware updates:\nsudo fwupdmgr refresh --force sudo fwupdmgr get-devices sudo fwupdmgr get-updates sudo fwupdmgr update Flatpak Enable full Flathub access (for non-free and third-party apps):\nflatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo Allow Flatpak installs per-user (optional):\nflatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo AppImage For AppImage support:\nsudo dnf install fuse Optional AppImage manager:\nflatpak install it.mijorus.gearlever NVIDIA Drivers Only for systems with supported NVIDIA GPUs (GT/GTX 600 series or newer).\nsudo dnf update Reboot, then install drivers:\nsudo dnf install akmod-nvidia sudo dnf install xorg-x11-drv-nvidia-cuda # for CUDA apps Wait a few minutes for the kernel module to build:\nmodinfo -F version nvidia Then reboot again.\nMedia Codecs Enable full multimedia playback support:\nsudo dnf4 group install multimedia sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing sudo dnf upgrade @multimedia --setopt=\"install_weak_deps=False\" --exclude=PackageKit-gstreamer-plugin sudo dnf group install -y sound-and-video Hardware Video Acceleration Improves playback and reduces CPU load.\nsudo dnf install ffmpeg-libs libva libva-utils Intel sudo dnf swap libva-intel-media-driver intel-media-driver --allowerasing sudo dnf install libva-intel-driver AMD Restore codec support:\nsudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686 sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686 OpenH264 for Firefox sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1 Then enable the OpenH264 plugin in Firefox settings.\nSystem Tweaks Set Hostname hostnamectl set-hostname YOUR_HOSTNAME Restore Default Firefox Start Page sudo rm -f /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js Fix Dual-Boot Time Sync sudo timedatectl set-local-rtc 0 Performance \u0026 Optimization Enable NVIDIA Modeset sudo grubby --update-kernel=ALL --args=\"nvidia-drm.modeset=1\" Disable Boot Delay Speeds up boot by disabling the wait service:\nsudo systemctl disable NetworkManager-wait-online.service Recommended Apps Compression Support sudo dnf install -y unzip p7zip p7zip-plugins unrar Useful Applications Blender, Brave, Discord, Easyeffects, Flatseal, Foliate, GIMP Krita, Obsidian, OnlyOffice, qBittorrent, VS Codium, yt-dlp Wallpaper https://github.com/NischalDawadi/Wallpapers\nCredit: https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide\n",
+  "wordCount" : "398",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/images/fedora.jpg","datePublished": "2025-11-05T17:20:58+05:45",
+  "dateModified": "2025-11-05T17:20:58+05:45",
+  "author":{
+    "@type": "Person",
+    "name": "Nischal Dawadi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/tech/fedora-post-install/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nischal Dawadi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/icons/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Home (Alt + H)">Digital Home</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+
+             
+            </div>
+        </div>
+
+        
+        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="menu hidden">
+            <li>
+                <a href="http://localhost:1313/posts/tech" title="💻Tech">
+                    <span>💻Tech</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/movies/" title="🎬 Movies">
+                    <span>🎬 Movies</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/music/" title="🎵 Music">
+                    <span>🎵 Music</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/books/" title="📚 Books">
+                    <span>📚 Books</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Post-install setup for Fedora Linux
+    </h1>
+    <div class="post-meta"><span title='2025-11-05 17:20:58 +0545 +0545'>November 5, 2025</span>&nbsp;·&nbsp;Nischal Dawadi
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/fedora.jpg" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#fedora-post-install-setup-guide" aria-label="Fedora Post-Install Setup Guide">Fedora Post-Install Setup Guide</a><ul>
+                        
+                <li>
+                    <a href="#rpm-fusion--terra" aria-label="RPM Fusion &amp; Terra">RPM Fusion &amp; Terra</a></li>
+                <li>
+                    <a href="#update-system" aria-label="Update System">Update System</a></li>
+                <li>
+                    <a href="#firmware" aria-label="Firmware">Firmware</a></li>
+                <li>
+                    <a href="#flatpak" aria-label="Flatpak">Flatpak</a></li>
+                <li>
+                    <a href="#appimage" aria-label="AppImage">AppImage</a></li>
+                <li>
+                    <a href="#nvidia-drivers" aria-label="NVIDIA Drivers">NVIDIA Drivers</a></li>
+                <li>
+                    <a href="#media-codecs" aria-label="Media Codecs">Media Codecs</a></li>
+                <li>
+                    <a href="#hardware-video-acceleration" aria-label="Hardware Video Acceleration">Hardware Video Acceleration</a><ul>
+                        
+                <li>
+                    <a href="#intel" aria-label="Intel">Intel</a></li>
+                <li>
+                    <a href="#amd" aria-label="AMD">AMD</a></li>
+                <li>
+                    <a href="#openh264-for-firefox" aria-label="OpenH264 for Firefox">OpenH264 for Firefox</a></li></ul>
+                </li>
+                <li>
+                    <a href="#system-tweaks" aria-label="System Tweaks">System Tweaks</a><ul>
+                        
+                <li>
+                    <a href="#set-hostname" aria-label="Set Hostname">Set Hostname</a></li>
+                <li>
+                    <a href="#restore-default-firefox-start-page" aria-label="Restore Default Firefox Start Page">Restore Default Firefox Start Page</a></li>
+                <li>
+                    <a href="#fix-dual-boot-time-sync" aria-label="Fix Dual-Boot Time Sync">Fix Dual-Boot Time Sync</a></li></ul>
+                </li>
+                <li>
+                    <a href="#performance--optimization" aria-label="Performance &amp; Optimization">Performance &amp; Optimization</a><ul>
+                        
+                <li>
+                    <a href="#enable-nvidia-modeset" aria-label="Enable NVIDIA Modeset">Enable NVIDIA Modeset</a></li>
+                <li>
+                    <a href="#disable-boot-delay" aria-label="Disable Boot Delay">Disable Boot Delay</a></li></ul>
+                </li>
+                <li>
+                    <a href="#recommended-apps" aria-label="Recommended Apps">Recommended Apps</a><ul>
+                        
+                <li>
+                    <a href="#compression-support" aria-label="Compression Support">Compression Support</a></li>
+                <li>
+                    <a href="#useful-applications" aria-label="Useful Applications">Useful Applications</a></li>
+                <li>
+                    <a href="#wallpaper" aria-label="Wallpaper">Wallpaper</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="fedora-post-install-setup-guide">Fedora Post-Install Setup Guide<a hidden class="anchor" aria-hidden="true" href="#fedora-post-install-setup-guide">#</a></h1>
+<p>A minimal setup reference for Fedora users to enable essential repositories, drivers, codecs, and performance tweaks.</p>
+<h2 id="rpm-fusion--terra">RPM Fusion &amp; Terra<a hidden class="anchor" aria-hidden="true" href="#rpm-fusion--terra">#</a></h2>
+<p>Fedora ships with several repositories disabled by default.<br>
+To access free and non-free software like Steam, Discord, or certain codecs, enable them:</p>
+<pre tabindex="0"><code>sudo dnf install \
+https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+</code></pre><p>To enable <strong>Terra</strong>:</p>
+<pre tabindex="0"><code>sudo dnf install --nogpgcheck --repofrompath &#39;terra,https://repos.fyralabs.com/terra$releasever&#39; terra-release
+</code></pre><p>Update appstream metadata:</p>
+<pre tabindex="0"><code>sudo dnf group upgrade core
+sudo dnf4 group install core
+</code></pre><h2 id="update-system">Update System<a hidden class="anchor" aria-hidden="true" href="#update-system">#</a></h2>
+<p>Use the Software Center → Update<br>
+or run:</p>
+<pre tabindex="0"><code>sudo dnf -y update 
+</code></pre><p>Then reboot your system.</p>
+<h2 id="firmware">Firmware<a hidden class="anchor" aria-hidden="true" href="#firmware">#</a></h2>
+<p>If your device supports updates through LVFS, refresh and apply firmware updates:</p>
+<pre tabindex="0"><code>sudo fwupdmgr refresh --force
+sudo fwupdmgr get-devices
+sudo fwupdmgr get-updates
+sudo fwupdmgr update
+</code></pre><h2 id="flatpak">Flatpak<a hidden class="anchor" aria-hidden="true" href="#flatpak">#</a></h2>
+<p>Enable full Flathub access (for non-free and third-party apps):</p>
+<pre tabindex="0"><code>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+</code></pre><p>Allow Flatpak installs per-user (optional):</p>
+<pre tabindex="0"><code>flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</code></pre><h2 id="appimage">AppImage<a hidden class="anchor" aria-hidden="true" href="#appimage">#</a></h2>
+<p>For AppImage support:</p>
+<pre tabindex="0"><code>sudo dnf install fuse
+</code></pre><p>Optional AppImage manager:</p>
+<pre tabindex="0"><code>flatpak install it.mijorus.gearlever
+</code></pre><h2 id="nvidia-drivers">NVIDIA Drivers<a hidden class="anchor" aria-hidden="true" href="#nvidia-drivers">#</a></h2>
+<p>Only for systems with supported NVIDIA GPUs (GT/GTX 600 series or newer).</p>
+<pre tabindex="0"><code>sudo dnf update
+</code></pre><p>Reboot, then install drivers:</p>
+<pre tabindex="0"><code>sudo dnf install akmod-nvidia
+sudo dnf install xorg-x11-drv-nvidia-cuda  # for CUDA apps
+</code></pre><p>Wait a few minutes for the kernel module to build:</p>
+<pre tabindex="0"><code>modinfo -F version nvidia
+</code></pre><p>Then reboot again.</p>
+<h2 id="media-codecs">Media Codecs<a hidden class="anchor" aria-hidden="true" href="#media-codecs">#</a></h2>
+<p>Enable full multimedia playback support:</p>
+<pre tabindex="0"><code>sudo dnf4 group install multimedia
+sudo dnf swap &#39;ffmpeg-free&#39; &#39;ffmpeg&#39; --allowerasing
+sudo dnf upgrade @multimedia --setopt=&#34;install_weak_deps=False&#34; --exclude=PackageKit-gstreamer-plugin
+sudo dnf group install -y sound-and-video
+</code></pre><h2 id="hardware-video-acceleration">Hardware Video Acceleration<a hidden class="anchor" aria-hidden="true" href="#hardware-video-acceleration">#</a></h2>
+<p>Improves playback and reduces CPU load.</p>
+<pre tabindex="0"><code>sudo dnf install ffmpeg-libs libva libva-utils
+</code></pre><h3 id="intel">Intel<a hidden class="anchor" aria-hidden="true" href="#intel">#</a></h3>
+<pre tabindex="0"><code>sudo dnf swap libva-intel-media-driver intel-media-driver --allowerasing
+sudo dnf install libva-intel-driver
+</code></pre><h3 id="amd">AMD<a hidden class="anchor" aria-hidden="true" href="#amd">#</a></h3>
+<p>Restore codec support:</p>
+<pre tabindex="0"><code>sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
+sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
+sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
+</code></pre><h3 id="openh264-for-firefox">OpenH264 for Firefox<a hidden class="anchor" aria-hidden="true" href="#openh264-for-firefox">#</a></h3>
+<pre tabindex="0"><code>sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264
+sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+</code></pre><p>Then enable the OpenH264 plugin in Firefox settings.</p>
+<h2 id="system-tweaks">System Tweaks<a hidden class="anchor" aria-hidden="true" href="#system-tweaks">#</a></h2>
+<h3 id="set-hostname">Set Hostname<a hidden class="anchor" aria-hidden="true" href="#set-hostname">#</a></h3>
+<pre tabindex="0"><code>hostnamectl set-hostname YOUR_HOSTNAME
+</code></pre><h3 id="restore-default-firefox-start-page">Restore Default Firefox Start Page<a hidden class="anchor" aria-hidden="true" href="#restore-default-firefox-start-page">#</a></h3>
+<pre tabindex="0"><code>sudo rm -f /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js
+</code></pre><h3 id="fix-dual-boot-time-sync">Fix Dual-Boot Time Sync<a hidden class="anchor" aria-hidden="true" href="#fix-dual-boot-time-sync">#</a></h3>
+<pre tabindex="0"><code>sudo timedatectl set-local-rtc 0
+</code></pre><h2 id="performance--optimization">Performance &amp; Optimization<a hidden class="anchor" aria-hidden="true" href="#performance--optimization">#</a></h2>
+<h3 id="enable-nvidia-modeset">Enable NVIDIA Modeset<a hidden class="anchor" aria-hidden="true" href="#enable-nvidia-modeset">#</a></h3>
+<pre tabindex="0"><code>sudo grubby --update-kernel=ALL --args=&#34;nvidia-drm.modeset=1&#34;
+</code></pre><h3 id="disable-boot-delay">Disable Boot Delay<a hidden class="anchor" aria-hidden="true" href="#disable-boot-delay">#</a></h3>
+<p>Speeds up boot by disabling the wait service:</p>
+<pre tabindex="0"><code>sudo systemctl disable NetworkManager-wait-online.service
+</code></pre><h2 id="recommended-apps">Recommended Apps<a hidden class="anchor" aria-hidden="true" href="#recommended-apps">#</a></h2>
+<h3 id="compression-support">Compression Support<a hidden class="anchor" aria-hidden="true" href="#compression-support">#</a></h3>
+<pre tabindex="0"><code>sudo dnf install -y unzip p7zip p7zip-plugins unrar
+</code></pre><h3 id="useful-applications">Useful Applications<a hidden class="anchor" aria-hidden="true" href="#useful-applications">#</a></h3>
+<pre tabindex="0"><code>Blender, Brave, Discord, Easyeffects, Flatseal, Foliate, GIMP
+Krita, Obsidian, OnlyOffice, qBittorrent, VS Codium, yt-dlp
+</code></pre><h3 id="wallpaper">Wallpaper<a hidden class="anchor" aria-hidden="true" href="#wallpaper">#</a></h3>
+<p><a href="https://github.com/NischalDawadi/Wallpapers">https://github.com/NischalDawadi/Wallpapers</a></p>
+<hr>
+<p><strong>Credit</strong>: <a href="https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide">https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/fedora/">Fedora</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/movies/oldboy/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Oldboy (2003) – A Disturbing Masterpiece That Shook Me</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><footer class="footer">
+    <span>
+        © 2025 · Designed & Maintained by Nischal Dawadi
+    </span>
+</footer>
+<script>
+    
+    
+    let b = document.querySelector("#menu-trigger")
+    let m = document.querySelector(".menu")
+    b.addEventListener("click", function () {
+        m.classList.toggle("hidden")
+    });
+    
+    document.body.addEventListener('click', function (event) {
+        if (!b.contains(event.target)) {
+            m.classList.add("hidden")
+        }
+    });
+    
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

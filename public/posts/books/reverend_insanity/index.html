@@ -157,8 +157,8 @@
         </button>
         <ul class="menu hidden">
             <li>
-                <a href="http://localhost:1313/posts/books/" title="📚 Books">
-                    <span>📚 Books</span>
+                <a href="http://localhost:1313/posts/tech" title="💻Tech">
+                    <span>💻Tech</span>
                 </a>
             </li>
             <li>
@@ -172,8 +172,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/exam-related/" title=" Exam">
-                    <span> Exam</span>
+                <a href="http://localhost:1313/posts/books/" title="📚 Books">
+                    <span>📚 Books</span>
                 </a>
             </li>
         </ul>
@@ -232,7 +232,6 @@
         <p><em>“In this world there are only eternal benefits, there are no eternal friends or enemies.”</em></p>
       </div>
     </div><p>This sets the tone for everything that follows. It is a system that strips away idealism and lays bare the laws of survival.</p>
-<hr>
 <h3 id="fang-yuan-a-man-who-refuses-to-bow--even-to-heaven">Fang Yuan: A Man Who Refuses to Bow — Even to Heaven<a hidden class="anchor" aria-hidden="true" href="#fang-yuan-a-man-who-refuses-to-bow--even-to-heaven">#</a></h3>
 <p>Fang Yuan’s goal is not revenge, not justice, not even wealth. It is <strong>eternal life</strong>. Reborn with the memories of a past life, he walks a path that no one else dares — one paved with blood, betrayal, and unshakable resolve.</p>
 <p>But Fang Yuan’s ruthlessness is not emotional. It is cold and logical. Every action he takes, no matter how cruel, serves a long-term vision: freedom from death, freedom from fate. As he states:</p>
@@ -245,12 +244,10 @@
         <p><em>“There is only immortality. Only eternal life should be the goal one should pursue.”</em></p>
       </div>
     </div><p>What makes him fascinating is not his power, but his discipline. He is not a madman. He is clarity, stripped of comfort.</p>
-<hr>
 <h3 id="the-philosophy-of-ren-zhu-natures-true-law">The Philosophy of Ren Zhu: Nature’s True Law<a hidden class="anchor" aria-hidden="true" href="#the-philosophy-of-ren-zhu-natures-true-law">#</a></h3>
 <p>Threaded through the novel is the chilling yet thought-provoking philosophy of <strong>Ren Zhu</strong>, which teaches that mercy is weakness, and that nature favors those willing to discard emotion for advancement.</p>
 <p>Fang Yuan embodies this truth. He does not seek to change the world — he adapts to it with brutal precision. He uses morality only when it’s useful, discards it when it isn’t.</p>
 <p>This challenges readers: if nature is truly indifferent, why should we cling to ideals? Are morals principles… or conveniences?</p>
-<hr>
 <h3 id="side-characters-that-echo-through-the-story">Side Characters That Echo Through the Story<a hidden class="anchor" aria-hidden="true" href="#side-characters-that-echo-through-the-story">#</a></h3>
 <p>Though Fang Yuan is the center, several side characters leave deep impressions and elevate the narrative:</p>
 <ul>
@@ -259,16 +256,13 @@
 <li>Others, like Bai Ning Bing and Hei Lou Lan, challenge or assist Fang Yuan, but ultimately reinforce the novel’s truth: survival is temporary — only legacy endures.</li>
 </ul>
 <p>Each of these characters, though sometimes short-lived, alters the course of the narrative and the mind of the reader.</p>
-<hr>
 <h3 id="defying-heavens-will-the-battle-against-fate-itself">Defying Heaven’s Will: The Battle Against Fate Itself<a hidden class="anchor" aria-hidden="true" href="#defying-heavens-will-the-battle-against-fate-itself">#</a></h3>
 <p>The most powerful force in the novel isn’t a person — it is <strong>Heaven’s Will</strong>, the divine force that shapes destiny, favors certain outcomes, and preserves cosmic order.</p>
 <p>Fang Yuan’s war is not only against his enemies — it is against this <strong>pre-written fate</strong>. His rebellion is philosophical. It is the cry of a man who says, <em>“I will not be a pawn. Not in any game. Not even Heaven’s.”</em></p>
 <p>In a world like ours, filled with rules and systems that often feel out of our control, Fang Yuan’s defiance feels deeply relatable. He may be extreme — but the fire of his resistance is something most readers recognize in themselves.</p>
-<hr>
 <h3 id="final-thoughts-a-brutal-brilliant-exploration-of-human-will">Final Thoughts: A Brutal, Brilliant Exploration of Human Will<a hidden class="anchor" aria-hidden="true" href="#final-thoughts-a-brutal-brilliant-exploration-of-human-will">#</a></h3>
 <p><em>Reverend Insanity</em> is a rare kind of story: one that doesn’t try to comfort you. It doesn’t offer a clean moral path or a satisfying idea of heroism. Instead, it forces you to ask: <em>What would I sacrifice for my goal?</em> <em>Can I face the world as it truly is, not as I wish it to be?</em></p>
 <p>It’s not for everyone. But for those willing to walk its path, it delivers one of the most thought-provoking journeys in fantasy fiction.</p>
-<hr>
 
 
   </div>
@@ -282,10 +276,10 @@
       <li><a href="http://localhost:1313/tags/chinese-fantasy/">Chinese Fantasy</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/music/crimson/">
+  <a class="prev" href="http://localhost:1313/posts/movies/oldboy/">
     <span class="title">« Prev</span>
     <br>
-    <span>Crimson – Edge of Sanity</span>
+    <span>Oldboy (2003) – A Disturbing Masterpiece That Shook Me</span>
   </a>
   <a class="next" href="http://localhost:1313/posts/music/echoes/">
     <span class="title">Next »</span>
@@ -377,6 +371,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

@@ -22,7 +22,7 @@ The world rewards not the kind-hearted, but the calculating. As one quote from t
 
 This sets the tone for everything that follows. It is a system that strips away idealism and lays bare the laws of survival.
 
----
+
 
 ### Fang Yuan: A Man Who Refuses to Bow — Even to Heaven
 
@@ -35,7 +35,7 @@ But Fang Yuan’s ruthlessness is not emotional. It is cold and logical. Every a
 
 What makes him fascinating is not his power, but his discipline. He is not a madman. He is clarity, stripped of comfort.
 
----
+
 
 ### The Philosophy of Ren Zhu: Nature’s True Law
 
@@ -45,7 +45,7 @@ Fang Yuan embodies this truth. He does not seek to change the world — he adapt
 
 This challenges readers: if nature is truly indifferent, why should we cling to ideals? Are morals principles… or conveniences?
 
----
+
 
 ### Side Characters That Echo Through the Story
 
@@ -57,7 +57,7 @@ Though Fang Yuan is the center, several side characters leave deep impressions a
 
 Each of these characters, though sometimes short-lived, alters the course of the narrative and the mind of the reader.
 
----
+
 
 ### Defying Heaven’s Will: The Battle Against Fate Itself
 
@@ -67,7 +67,7 @@ Fang Yuan’s war is not only against his enemies — it is against this **pre-w
 
 In a world like ours, filled with rules and systems that often feel out of our control, Fang Yuan’s defiance feels deeply relatable. He may be extreme — but the fire of his resistance is something most readers recognize in themselves.
 
----
+
 
 ### Final Thoughts: A Brutal, Brilliant Exploration of Human Will
 
@@ -76,5 +76,5 @@ In a world like ours, filled with rules and systems that often feel out of our c
 It’s not for everyone. But for those willing to walk its path, it delivers one of the most thought-provoking journeys in fantasy fiction.
 
 
----
+
 
